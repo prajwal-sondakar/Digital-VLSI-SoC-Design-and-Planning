@@ -196,9 +196,9 @@ exit
 
 Screenshots of running each commands
 
-![1](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/d19f6d0f-16f8-4e79-aa5a-f2a34b9fb203)
-![2](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/5e03c8ca-8c7f-4579-a7bc-10161007910e)
-![3](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/5f196a31-059e-4192-a208-8a15ba1a0dd7)
+![Slide1](https://github.com/user-attachments/assets/a38ecd1f-ac82-4ba1-9b46-beafa83fbf38)
+![Slide2](https://github.com/user-attachments/assets/620297fc-c6d3-4a3d-81b4-8ea187cb6f27)
+![Slide3](https://github.com/user-attachments/assets/4495487f-56e6-4bbf-98f7-7ed1ed35d654)
 
 #### 2. Calculate the flop ratio.
 
@@ -344,15 +344,15 @@ run_floorplan
 ```
 
 Screenshot of floorplan run
-
-![Screenshot from 2024-03-17 18-06-19](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/7deda325-2ae8-4e98-aa71-7a54f5c34fcb)
-![Screenshot from 2024-03-17 18-06-36](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/c1fe538f-c58f-46b9-9466-b0873a88eb6c)
+![Slide3](https://github.com/user-attachments/assets/4cda4078-e7fa-43e7-bde7-5d2c3608bdfa)
+![Slide4](https://github.com/user-attachments/assets/479b73a2-8fa2-484f-8c29-417bbeea3050)
+![Slide5](https://github.com/user-attachments/assets/827ff0bc-4dae-44c9-8841-e2dbf292bf0d)
 
 #### 2. Calculate the die area in microns from the values in floorplan def.
 
 Screenshot of contents of floorplan def
 
-![Screenshot from 2024-03-17 18-34-53](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/9a0baa93-7db6-4148-b155-49b18c130522)
+![Slide6](https://github.com/user-attachments/assets/b7fa29ff-109d-4bd6-9dc5-65904fc2530d)
 
 According to floorplan def
 ```math
@@ -434,28 +434,27 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 
 Screenshots of floorplan def in magic
 
-![Screenshot from 2024-03-17 18-05-19](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/93af15d9-ba65-49d4-8e98-ad1d0c4b0097)
+![Slide7](https://github.com/user-attachments/assets/aedc18fd-cee3-4161-8ed4-f13319912993)
 
 Equidistant placement of ports
 
-![Screenshot from 2024-03-17 18-14-28](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/6183e357-315c-40df-9bc3-e7993d76b19c)
-
-Port layer as set through config.tcl
-
-![Screenshot from 2024-03-17 18-17-46](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/4e35528c-1bb1-4eaa-84be-14a95e532b75)
-![Screenshot from 2024-03-17 18-19-50](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/a88afbbd-6d63-4ce5-a1ec-620dd8c37f45)
-
-Decap Cells and Tap Cells
-
-![Screenshot from 2024-03-17 18-22-57](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/c1714ed1-7cdd-4b3c-8e0b-e4f97270ef82)
+![Slide8](https://github.com/user-attachments/assets/34f3d804-418c-42ea-a408-ce92de2d49e8)
 
 Diogonally equidistant Tap cells
 
-![Screenshot from 2024-03-17 18-25-28](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/6f62f639-81cc-4e5d-8b5c-ea5b209125ba)
+![Slide9](https://github.com/user-attachments/assets/4dc0d9da-13ba-4bf9-a5e2-3035d8d7364d)
 
-Unplaced standard cells at the origin
 
-![Screenshot from 2024-03-17 18-31-41](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/f875937c-cec4-4c2c-8c4b-6808d81821d6)
+
+
+
+
+
+
+
+
+
+
 
 #### 4. Run 'picorv32a' design congestion aware placement using OpenLANE flow and generate necessary outputs.
 
@@ -468,8 +467,8 @@ run_placement
 
 Screenshots of placement run
 
-![Screenshot from 2024-03-17 22-44-17](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/3ddaf32e-fdbb-4410-bfe6-7ea6b2640438)
-![Screenshot from 2024-03-17 22-46-27](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/e6b36b9b-b9bc-4390-84fd-a10d23e2246f)
+![Slide10](https://github.com/user-attachments/assets/9e8df9c3-cc83-4c9c-854a-8493181f3b89)
+![Slide11](https://github.com/user-attachments/assets/e9b13be1-6e84-46a0-ab39-606f5df12aa6)
 
 #### 5. Load generated placement def in magic tool and explore the placement.
 
@@ -485,11 +484,11 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 
 Screenshots of floorplan def in magic
 
-![Screenshot from 2024-03-17 22-58-44](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/e703ef0b-3968-4132-a9c7-05b53f50b214)
+![Slide12](https://github.com/user-attachments/assets/c0658470-aa95-4906-95d3-b820e560aa17)
 
 Standard cells legally placed 
 
-![Screenshot from 2024-03-17 23-04-20](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/54911138-f942-48b9-b4e9-61d741a4b5ac)
+![Slide13](https://github.com/user-attachments/assets/7f4cd375-c6c9-4f0a-98b6-2817b75b18ee)
 
 Commands to exit from current run
 
@@ -794,22 +793,22 @@ magic -T sky130A.tech sky130_inv.mag &
 
 Screenshot of commands run
 
-![Screenshot from 2024-03-19 00-22-27](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/8f304929-a190-4aa1-9cc4-b8fefa1909e8)
+![Slide14](https://github.com/user-attachments/assets/df7b665c-b97c-44fb-b2f6-5f0d7973a337)
 
 #### 2. Load the custom inverter layout in magic and explore.
 
 Screenshot of custom inverter layout in magic
 
-![Screenshot from 2024-03-19 00-22-44](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/6eae887c-ebc6-4771-8bcc-e4edaf9947d9)
+<img width="1366" height="768" alt="Capture-0 1" src="https://github.com/user-attachments/assets/509cc8a0-6a16-47c9-9ffa-888cf6ac807d" />
 
 NMOS and PMOS identified
 
-![Screenshot from 2024-03-19 00-28-03](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/eada5c8b-154c-4eea-819c-d49f89495acb)
-![Screenshot from 2024-03-19 00-29-14](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/dec7e465-8fd0-45d5-bac6-10de1acb8c76)
+<img width="1366" height="768" alt="Capture-0 2" src="https://github.com/user-attachments/assets/efb6a4d0-ed1c-4188-ad97-a6fd61dcc8bb" />
+
 
 Output Y connectivity to PMOS and NMOS drain verified
 
-![Screenshot from 2024-03-19 00-31-17](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/e16fb883-907e-437a-b8d8-1b9d1b2e67a6)
+<img width="1366" height="768" alt="Capture-0 3" src="https://github.com/user-attachments/assets/482b72fa-6c00-4a7f-95be-607275a2fbde" />
 
 PMOS source connectivity to VDD (here VPWR) verified
 
@@ -843,22 +842,22 @@ ext2spice
 
 Screenshot of tkcon window after running above commands
 
-![Screenshot from 2024-03-19 01-24-17](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/831b0be9-3c02-4bbb-800e-6f1c3dc1ba1a)
+<img width="1366" height="768" alt="Capture-0 2" src="https://github.com/user-attachments/assets/e1154baa-30fc-4120-af93-33cf3742eac5" />
 
 Screenshot of created spice file
 
-![Screenshot from 2024-03-19 01-27-07](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/2c645f55-c4d5-4007-8b9c-73ba8a8e5bcb)
+<img width="832" height="451" alt="image" src="https://github.com/user-attachments/assets/3d9fb589-30ba-449b-8cb9-e6cb02d705f4" />
 
 #### 4. Editing the spice model file for analysis through simulation.
 
 Measuring unit distance in layout grid
 
-![Screenshot from 2024-03-19 01-30-15](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/74335564-b7a6-4b7d-b4b7-bb251c8d790b)
+<img width="831" height="461" alt="image" src="https://github.com/user-attachments/assets/8baf0dee-dca6-4121-93d2-b269950e94aa" />
 
 Final edited spice file ready for ngspice simulation
 
-![Screenshot from 2024-03-19 14-50-54](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/b5d20507-b65e-4b54-ba8e-576fb4d09429)
-![Screenshot from 2024-03-19 14-51-16](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/9cd17c95-de5b-48da-b8bc-2ee0c30915ef)
+<img width="830" height="453" alt="image" src="https://github.com/user-attachments/assets/8a096630-776d-4ffc-a0a0-be5b74c61b8d" />
+<img width="832" height="449" alt="image" src="https://github.com/user-attachments/assets/c8045828-a80c-4810-9789-7ad5ad867cd7" />
 
 #### 5. Post-layout ngspice simulations.
 
@@ -874,12 +873,13 @@ plot y vs time a
 
 Screenshots of ngspice run
 
-![Screenshot from 2024-03-19 14-56-42](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/c023ebb0-756f-4707-ae82-a28746f372da)
-![Screenshot from 2024-03-19 14-57-22](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/addefe5e-6a9a-44f2-943a-4a9373ddc56c)
+<img width="1366" height="768" alt="Capture0" src="https://github.com/user-attachments/assets/a14faee2-8b54-4712-ba8c-ee36d9835d38" />
+<img width="1353" height="768" alt="Capture2" src="https://github.com/user-attachments/assets/8e15e7d0-2067-461e-a498-b075fe3d2762" />
+
 
 Screenshot of generated plot
 
-![Screenshot from 2024-03-19 14-58-55](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/dd14a5d5-ffd9-4ad8-a871-e32af61362a3)
+<img width="1366" height="766" alt="Capture1" src="https://github.com/user-attachments/assets/b19b911c-c117-41e2-b11a-fb71d8779868" />
 
 Rise transition time calculation
 
@@ -892,16 +892,15 @@ Rise\ transition\ time = Time\ taken\ for\ output\ to\ rise\ to\ 80\% - Time\ ta
 ```math
 80\%\ of\ output = 2.64\ V
 ```
-
 20% Screenshots
 
-![Screenshot from 2024-03-19 15-15-02](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/261c420f-219f-4c26-ae32-6c0db82a722e)
-![Screenshot from 2024-03-19 15-20-04](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/bbb078c4-b3aa-436b-8832-23e5d7777081)
+<img width="1366" height="768" alt="Capture3" src="https://github.com/user-attachments/assets/57b2b3a6-98bc-48c6-96c9-9efb91b5c3d2" />
+<img width="1366" height="768" alt="Capture4" src="https://github.com/user-attachments/assets/255f6f26-268d-4ea4-a2b4-8bdd6f5b8380" />
 
 80% Screenshots
 
-![Screenshot from 2024-03-19 15-23-34](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/d10a0ff1-0523-4fe4-96f4-eefc63f647f7)
-![Screenshot from 2024-03-19 15-24-13](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/929042ad-2032-49aa-ae07-2a2163b9603e)
+<img width="1366" height="768" alt="Capture5" src="https://github.com/user-attachments/assets/74f8c7d3-d02a-40b7-b10f-2eb95f25ffb9" />
+<img width="1366" height="768" alt="Capture6" src="https://github.com/user-attachments/assets/0e8ad547-caf3-4a16-98fe-9c263a1d2426" />
 
 ```math
 Rise\ transition\ time = 2.24638 - 2.18242 = 0.06396\ ns = 63.96\ ps
@@ -921,13 +920,13 @@ Fall\ transition\ time = Time\ taken\ for\ output\ to\ fall\ to\ 20\% - Time\ ta
 
 20% Screenshots
 
-![Screenshot from 2024-03-19 15-34-22](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/0180052c-4b8c-4bd8-928c-cd8ab34d5a17)
-![Screenshot from 2024-03-19 15-34-34](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/83760cf7-18c9-45d1-8063-04baafe1dd1f)
+<img width="1366" height="768" alt="Capture7" src="https://github.com/user-attachments/assets/d9e66806-a068-4f54-8efd-7cd0ba5fa43e" />
+<img width="1366" height="768" alt="Capture8" src="https://github.com/user-attachments/assets/7bba4455-6956-4042-8a13-e74db2193218" />
 
 80% Screenshots
 
-![Screenshot from 2024-03-19 15-36-29](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/7bc0eeee-c7cd-464e-a90b-cac8d4f83144)
-![Screenshot from 2024-03-19 15-36-41](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/9a7dc3b0-9936-4704-97cd-1cd03cc6a8cb)
+<img width="1366" height="768" alt="Capture9" src="https://github.com/user-attachments/assets/aca0cf82-c4db-4fdd-9a14-aaa5fda04b6f" />
+<img width="1366" height="768" alt="Capture10" src="https://github.com/user-attachments/assets/a55e0816-1b0c-4b0f-ae13-905011f172f0" />
 
 ```math
 Fall\ transition\ time = 4.0955 - 4.0536 = 0.0419\ ns = 41.9\ ps
@@ -944,8 +943,8 @@ Rise\ Cell\ Delay = Time\ taken\ for\ output\ to\ rise\ to\ 50\% - Time\ taken\ 
 
 50% Screenshots
 
-![Screenshot from 2024-03-19 16-02-35](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/e34363cd-a70f-4939-b8e5-efb10620ce93)
-![Screenshot from 2024-03-19 16-03-46](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/f7452b60-3612-4bcf-a71d-b8ff021d5297)
+<img width="1366" height="768" alt="Capture11" src="https://github.com/user-attachments/assets/c6243d16-34ae-40a8-a797-7442398879c4" />
+<img width="1366" height="768" alt="Capture12" src="https://github.com/user-attachments/assets/9563ed79-daf5-4c87-b20e-58177cd25d11" />
 
 ```math
 Rise\ Cell\ Delay = 2.21144 - 2.15008 = 0.06136\ ns = 61.36\ ps
@@ -962,12 +961,12 @@ Fall\ Cell\ Delay = Time\ taken\ for\ output\ to\ fall\ to\ 50\% - Time\ taken\ 
 
 50% Screenshots
 
-![Screenshot from 2024-03-19 16-09-08](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/3d2ff2e5-dab6-497a-b5a4-74959f69c2a2)
-![Screenshot from 2024-03-19 16-10-03](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/aa88c26b-0cc4-4cf7-80d7-b2058e8fbc47)
 
-```math
-Fall\ Cell\ Delay = 4.07 - 4.05 = 0.02\ ns = 20\ ps
-```
+
+
+
+
+
 
 #### 6. Find problem in the DRC section of the old magic tech file for the skywater process and fix them.
 
@@ -1000,23 +999,23 @@ magic -d XR &
 
 Screenshots of commands run
 
-![Screenshot from 2024-03-21 22-33-57](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/1b4cf68e-fa83-4d44-9b08-ca2b63ceb471)
-![Screenshot from 2024-03-21 22-34-09](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/1bc14ddb-feb6-4052-bc12-0f018f09c343)
+<img width="1366" height="767" alt="Capture13" src="https://github.com/user-attachments/assets/95da7bc9-c896-4c44-ac1d-b1c5550e8b3f" />
+<img width="1366" height="768" alt="Capture15" src="https://github.com/user-attachments/assets/650ebff6-ccc1-4c6e-9631-debd149eeb8b" />
 
 Screenshot of .magicrc file
 
-![Screenshot from 2024-03-21 22-35-58](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/89b46a0f-63b7-445c-bf2b-e6cda16853c7)
+<img width="1353" height="754" alt="Capture14" src="https://github.com/user-attachments/assets/e7e81117-d85b-4ccc-8094-c9d1f0cc0301" />
 
 **Incorrectly implemented poly.9 simple rule correction**
 
 Screenshot of poly rules
 
-![Screenshot from 2024-03-21 22-54-49](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/9260cf37-5933-44a1-8362-597183644334)
+<img width="831" height="456" alt="image" src="https://github.com/user-attachments/assets/323eac0a-71d7-4747-b7e0-fa4e2dab5a6f" />
 
 Incorrectly implemented poly.9 rule no drc violation even though spacing < 0.48u
 
-![Screenshot from 2024-03-21 22-54-19](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/acfbcf69-020e-4b62-96bd-b7630aa74ef0)
-![Screenshot from 2024-03-21 23-54-11](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/a05bd29a-b181-4e26-826a-d32f12696b2c)
+<img width="749" height="420" alt="image" src="https://github.com/user-attachments/assets/3c6a47bc-f0fc-461f-878d-57a06953d041" />
+<img width="745" height="420" alt="image" src="https://github.com/user-attachments/assets/0b739210-24f7-452b-a5bf-fac6109019ed" />
 
 New commands inserted in sky130A.tech file to update drc
 
@@ -2305,4 +2304,5 @@ Screenshots of commands run and timing report generated
 * [Kunal Ghosh](https://github.com/kunalg123), Co-founder, VSD Corp. Pvt. Ltd.
 * [Nickson P Jose](https://github.com/nickson-jose), Physical Design Engineer, Intel Corporation.
 * [R. Timothy Edwards](https://github.com/RTimothyEdwards), Senior Vice President of Analog and Design, efabless Corporation.
+
 
