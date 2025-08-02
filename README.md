@@ -196,25 +196,10 @@ exit
 
 Screenshots of running each commands
 
-![Slide1](https://github.com/user-attachments/assets/a38ecd1f-ac82-4ba1-9b46-beafa83fbf38)
-![Slide2](https://github.com/user-attachments/assets/620297fc-c6d3-4a3d-81b4-8ea187cb6f27)
+<img width="945" height="517" alt="Capture100" src="https://github.com/user-attachments/assets/ca6b86a1-b6d6-4f41-b5d0-276bbb1d19dd" />
+<img width="946" height="520" alt="Capture1000" src="https://github.com/user-attachments/assets/033bb264-7140-4035-b0ff-de258d6e3cf8" />
 ![Slide3](https://github.com/user-attachments/assets/4495487f-56e6-4bbf-98f7-7ed1ed35d654)
 
-#### 2. Calculate the flop ratio.
-
-Screenshots of synthesis statistics report file with required values highlighted
-
-![Screenshot from 2024-03-15 22-02-42](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/9280fefc-80b2-44ef-af34-ef3bddd3c14e)
-![Screenshot from 2024-03-15 22-03-39](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/3275f46c-19d7-42c5-8984-96d455f6e09b)
-
-Calculation of Flop Ratio and DFF % from synthesis statistics report file
-
-```math
-Flop\ Ratio = \frac{1613}{14876} = 0.108429685
-```
-```math
-Percentage\ of\ DFF's = 0.108429685 * 100 = 10.84296854\ \%
-```
 
 ## Section 2: task-2
 
@@ -2296,6 +2281,7 @@ Screenshots of commands run and timing report generated
 * [Kunal Ghosh](https://github.com/kunalg123), Co-founder, VSD Corp. Pvt. Ltd.
 * [Nickson P Jose](https://github.com/nickson-jose), Physical Design Engineer, Intel Corporation.
 * [R. Timothy Edwards](https://github.com/RTimothyEdwards), Senior Vice President of Analog and Design, efabless Corporation.
+
 
 
 
