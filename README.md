@@ -195,6 +195,7 @@ exit
 ```
 
 Screenshots of running each commands
+![Slide1](https://github.com/user-attachments/assets/bef6a0c5-6592-4a9f-83f4-433bd24f3d93)
 
 ![1](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/d19f6d0f-16f8-4e79-aa5a-f2a34b9fb203)
 ![2](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/5e03c8ca-8c7f-4579-a7bc-10161007910e)
@@ -2305,3 +2306,4 @@ Screenshots of commands run and timing report generated
 * [Kunal Ghosh](https://github.com/kunalg123), Co-founder, VSD Corp. Pvt. Ltd.
 * [Nickson P Jose](https://github.com/nickson-jose), Physical Design Engineer, Intel Corporation.
 * [R. Timothy Edwards](https://github.com/RTimothyEdwards), Senior Vice President of Analog and Design, efabless Corporation.
+
