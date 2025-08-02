@@ -2,20 +2,15 @@
 ![Digital_VLSI_SoC_Design_ _Planning_(RTL2GDSII_Flow)1](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/92eb860b-7a88-4c6f-8143-ad3e09fd9c5b)
 ![Digital_VLSI_SoC_Design_ _Planning_(RTL2GDSII_Flow) (1)1](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/4285c5e4-d5df-43e4-b460-ead45ff67f9b)
 -->
-![Digital_VLSI_SoC_Design_ _Planning_(RTL2GDSII_Flow) (1)2](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/5b8bdb5f-95c7-41c0-b809-711b2b8ad171)
+
 # Digital VLSI SoC Design and Planning
 
 
 > 2 Week digital VLSI SoC design and planning workshop with complete RTL2GDSII flow organised by VSD in collaboration with NASSCOM
 
-## Section 1 - Inception of open-source EDA, OpenLANE and Sky130 PDK (14/03/2024 - 15/03/2024)
+## Section 1 - Inception of open-source EDA, OpenLANE and Sky130 PDK (16/07/2025 - 17/07/2025)
 
 ### Theory
-
-<details>
-  <summary>
-Expand or Collapse
-  </summary>
 
 #### Package
 
@@ -150,8 +145,6 @@ Expand or Collapse
 
 ![image](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/d8bc72cd-2fe9-4ae2-9431-68a6fa77c671)
 
-</details>
-
 ### Implementation
 
 Section 1 tasks:- 
@@ -223,9 +216,86 @@ Flop\ Ratio = \frac{1613}{14876} = 0.108429685
 Percentage\ of\ DFF's = 0.108429685 * 100 = 10.84296854\ \%
 ```
 
-## Section 2 - Good floorplan vs bad floorplan and introduction to library cells (16/03/2024 - 17/03/2024)
+## Section 2: task-2
+
+
+# SKY130 Day 2: Good vs Bad Floorplan and Introduction to Library Cells(18/07/2025 - 20/07/2025)
+## Chip Floor Planning Considerations
+### Utilisation Factor and Aspect Ratio
 
 ### Theory
+The first step in physical design is to **define the width and height of the core and die** : Beginning with a very simple netlist, that can extrapolated later we will first draw a basic diagram in the form of symbols that we will later convert into physical designs. We will take each cell (gates, specific cell like flip flop) and give it a standard (although rough for now) dimensions. As an example here, each unit will be 1 unit x 1 unit - i.e. 1 sq. unit in size, and since there are 4 gates/flip-flops here, the total size of the silicon wafer will 4 sq. units.
+
+{IMAGE CREDITS: VSDIAT ; SCREENSHOT TAKEN FROM LECTURE}
+
+![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/bd876662-ea2d-4ca0-9393-39e2e34bdec2)
+
+
+> NOTE : here, we are ignoring the wires
+
+All logical cells will be placed inside the core - which is part of the die. If the logical cells occupy the core fully, it is known as 100% utilisation. Utilisation factor = Area occupied by netlist / Total area of core. In this case, we see that utilisation factor is 100%, but practically it is usually 50%. Aspect Ratio is the ratio between height and width. If the chip is square - it is 1, else the chip is rectangular in shape.
+
+Example: 
+{IMAGE CREDITS: VSDIAT ; SCREENSHOT TAKEN FROM LECTURE}
+
+![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/056fe880-4a00-4941-aab1-8e22c09e52c2)
+
+Utilisation factor = 50 %
+
+Aspect Ratio = 2 : 4 = 1 : 2 = .5
+
+
+### Concept of Pre-Placed Cells
+
+Pre-Placed cells are complex logic blocks that can be reused. They are already implemented and cannot be touched by Auto Place and Route tools - and hence are required to be very well designed. Placement of such cells are user-based. A combinational logic - such as netlist shown does a particular function and is composed of various gates. We can divide this logic into blocks - while preserving the connectivity of the logic. By extending IO pins and making connections we can convert the logic into two parts - that are blackboxed and can be used as needed. If a design only requires a black box, it can be directly handed over to the designer with out much hassle. The various preplaced blocks available include memory, clock-gating cell, comparator, MUX. The arrangement of these IPs in a chip are known as floorplanning.
+
+{IMAGE CREDITS: VSDIAT ; SCREENSHOT TAKEN FROM LECTURE}
+
+![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/960cb6af-73a6-4fe9-ba92-5d658b41b8fb)
+
+{IMAGE CREDITS: VSDIAT ; SCREENSHOT TAKEN FROM LECTURE}
+
+![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/503e2a1f-ce46-4790-9260-6a2ce2b6f1ec)
+
+{IMAGE CREDITS: VSDIAT ; SCREENSHOT TAKEN FROM LECTURE}
+
+![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/ea9c5c91-9634-4a63-b022-24969a98a2d6)
+
+{IMAGE CREDITS: VSDIAT ; SCREENSHOT TAKEN FROM LECTURE}
+
+![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/2c193af2-6ff9-4533-8d6c-0c2e1833283f)
+
+
+### De-Coupling Capacitors
+
+We surround pre-placed cells with de-coupling capacitors. If we think of a circuit to be part of a block, whenever it is switched on there is a demand for current, which is supplied by the Vdd. Upon switching the circuit off, there is a discharge, which the ground accepts. However, practically when voltage is supplied is passes through a wire which causes it to reduce slightly due the resistance, inductance and capacitance in the wire, and the reduced voltage is called Vdd'. The Vdd' always needs to stay in the noise margin - which ranges from Vih to Voh. If this is not true, the circuit is unstable. This is due to the large physical distance between the actual voltage supply and the circuit.
+
+Decoupling capacitors is a solution to this problem. Decoupling capacitors can be thought of as as a huge capacitor completely filled with charge. The equivalent voltage across the capacitor is same as across the main supply voltage. The capacitor decouples the circuit from the main supply. Hence, all the pre-placed cells get their power supply from the capacitors and hence are completely stable.
+
+### Power Planning
+
+Consider a particular piece of logic to be a _macro_, that is repeated many times on a single chip. It requires a lot of voltage, so voltage must be supplied through a decoupling capacitor. However, it is not feasible to add the de-coupling capacitors on the entire circuit - only critical elements can be decoupled.
+
+If the 16 bit bus is connected to an inverter, then it means that all the capacitors will discharge the voltage at once. A lot of capacitors discharging at once cam cause **Ground Bounce** due to great amount of voltage needed to drained at the same time, and turning the capacitor on might cause **Voltage Drop** due to insufficient current. Ground bounce and voltage drop might cause the voltage to not be within the noise margin range. To solve this problem, we can have multiple powersource taps and sources ( known as a power mesh) where capacitors can source current from the nearest Vdd and sink current to the nearest Ground.
+
+### Pin Placement and Logical Cell Placement Blockage
+
+{IMAGE CREDITS: VSDIAT ; SCREENSHOT TAKEN FROM LECTURE}
+
+![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/92ccc847-3206-4223-b279-f73045b7d0e5)
+
+Take the above netlist as an example needing to be implemented. The information about the connections is coded through VERILOG (also known as VHDL).The input and output ports are placed left and right between the core and the die respectively. The placements of the ports is cell-specific. The clocks are continuously drive the cells and hence clock ports are bigger than data ports. Due to this, we also need the least resistance paths for the clocks. The size is inversely proportional to the resistance.
+
+{IMAGE CREDITS: VSDIAT ; SCREENSHOT TAKEN FROM LECTURE}
+
+![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/2d72b528-89f5-42d4-bb11-5a183b37113b)
+
+After the pin placement, we create Logical Cell Placement Blockage to ensure that the APR tool does not place any cell on the pin locations.
+
+{IMAGE CREDITS: VSDIAT ; SCREENSHOT TAKEN FROM LECTURE}
+
+![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/f87544bd-7fb1-422d-9229-d885444d6c89)
+
 
 ### Implementation
 
@@ -240,9 +310,9 @@ Section 2 tasks:-
 Area\ of\ die\ in\ microns = Die\ width\ in\ microns * Die\ height\ in\ microns
 ```
 
-* All section 2 logs, reports and results can be found in following run folder:
 
-[Section 2 Run - 17-03_12-06](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/tree/main/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/17-03_12-06)
+
+
 
 #### 1. Run 'picorv32a' design floorplan using OpenLANE flow and generate necessary outputs.
 
@@ -306,6 +376,49 @@ Die\ height\ in\ microns = \frac{671405}{1000} = 671.405\ Microns
 ```math
 Area\ of\ die\ in\ microns = 660.685 * 671.405 = 443587.212425\ Square\ Microns
 ```
+## Library Binding and Placement
+### Netlist Binding and Initial Place Design
+
++ The first step is to bind the netlist with physical cells i.e. cells with real dimension. The netlist contains various gates, that while in the schematic are of a certain shape as depicted, are usually square/rectangular in shape in production. These gates are given a specific shape, and in the end look very different from the netlist.
+
+These blocks are sourced from a "_shelf_", known as a **library**. The library has cells with various shapes, dimensions and also contains information about the delay information. The library contains various sizes of cells with the same functionality too - since bigger cells have lesser resistance
+
+{IMAGE CREDITS: VSDIAT ; SCREENSHOT TAKEN FROM LECTURE}
+
+![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/73dae3fe-cf37-41dc-8ef5-20d2d00ad475)
+
+{IMAGE CREDITS: VSDIAT ; SCREENSHOT TAKEN FROM LECTURE}
+
+![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/a2e71ed5-14fc-4ff9-b1c1-47d92af242b5)
+
++ The second step is **PLACEMENT**, which is done based on connectivity. As can be seen, flip flop 1 is close to the  _Din1_ pin and flip flop 2 is close to _Dout1_ pin. Combinational cells are placed in close proximity to FF1 and FF2 as to reduce delay.
+
+{IMAGE CREDITS: VSDIAT ; SCREENSHOT TAKEN FROM LECTURE}
+
+![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/1b63d280-f78d-4c4d-aa86-dcf609429bd7)
+
+
+### Optimise Placement Using Estimated Wire-Length and Capacitance
+
+Here, we will estimate wirelength needed to connect the components together. If the wirelength is too long, we would need to install repeaters, as the signal may change over a long distance. Repeaters essentially recondition the same signal to it's prior strength.
+
+### Final Placement Optimization
+
+{IMAGE CREDITS: VSDIAT ; SCREENSHOT TAKEN FROM LECTURE}
+
+![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/0941c315-195a-43f7-89aa-70e5e3215443)
+
+### Congestion Aware Placement Using RePLACE
+
+The command to run placement of OpenLANE - _run_placement_ is a wrapper which does three functions
+- Global Placement (by using the RePlace tool) - there is no legalisation and HPWL reduction model is used
+- Optimization (by Resier tool)
+- Detailed Placement (by OpenDP tool) - legalisation occurs - where standard cells are placed in rows and there will be no overlap of the cells.
+
+Placement aims to **converge the overflow value**. 
+
+> NOTE: If placement will be sucessful and the designs will converge, the overflow value will progressively reduce during the placement.
+
 
 #### 3. Load generated floorplan def in magic tool and explore the floorplan.
 
@@ -387,10 +500,257 @@ exit
 # Exit from OpenLANE flow docker sub-system
 exit
 ```
+## Cell Design and Characterisation Flows
+### Inputs for Cell Design Flow and Circuit and Layout Design Step
 
-## Section 3 - Design library cell using Magic Layout and ngspice characterization (18/03/2024 - 21/03/2024)
+Standard cells - for example AND gate, OR gate, BUFFER etc are stored in the _standard cell library_. There are various types of cells in the library with various variations as well - in drive strengths, functionality, and voltages. For a greater cell size, there is greater drive strength for longer wires. If there is high Vth, then it will take more time to switch than a lesser threshhold voltage cell.
+
+The standard cell design flow is as follows:-
+
+INPUTS (PDKS : DRC and LVS rules, SPICE models, library and user defined specs)
+
+PROCESSES (circuit, layout design and charecterisation)
+
+OUTPUTS (Circuit Description Language, GDSII, lef, timing, noise etc)
+
+> DRC & LVS Rules contain tech files and poly substrate parameters
+> 
+> SPICE Models contain threshold, linear regions, saturation region equations with added foundry parameters, including NMOS and PMOS parameters
+> 
+> User defined specifications include cell height and cell width, supply voltage, pin locations, and metal layer requirement
+> 
+>  IMPORTANT: The standard cell library developer must adhere to the rules given by the foundry so that when the cell can be used on a real design without any errors
+>
+> Circuit design is done by modeling the pmos and nmos to meet input library requirement
+> 
+> Layout design is done using Euler's path and stick diagram on Magic layout tool
+>
+> {IMAGE CREDITS: VSDIAT ; SCREENSHOT TAKEN FROM LECTURE}
+> 
+> ![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/b94b535f-ebd1-4b8a-bd36-f649fb6a753f)
+
+### Typical Characterisation Flow
+
+Steps of Characterisation Flow:-
+
+1) Reading of SPICE module files
+2) Reading of netlist extracted by SPICE
+3) Recognising buffer behaviour
+4) Reading subcircuits
+5) Attaching neccessary power sources
+6) Applying stimulus
+7) Provision of of neccessary output capacitance
+8) Provision of simulation command
+
+These steps are given to the CHARECTERISATION SOFTWARE KNOWN AS **GUNA** in the form of a configuration file, which will generate timing, noise and power models in the form of _.libs_ files.
+
+## General Timing Characterisation Parameters
+### Timing Threshhold Definitions
+
+Here, we will talk about the semantics of the various _.libs_ files generated by GUNA. To do this, we will take this circuit as an example:
+
+{IMAGE CREDITS: VSDIAT ; SCREENSHOT TAKEN FROM LECTURE}
+
+![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/0ed894da-ff96-46f5-8e9e-3b3271884568)
+
+Here, the red line is output of first inverter and blue is output of second inverter.
+
+{IMAGE CREDITS: VSDIAT ; SCREENSHOT TAKEN FROM LECTURE}
+
+![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/07cc3660-34e2-4446-8d50-97599d213504)
+
+{IMAGE CREDITS: DEEPTHY SANTHAKUMAR}
+
+![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/198064dc-3dd9-4bf5-aa52-d0012d7544f9)
+
+{IMAGE CREDITS: DEEPTHY SANTHANKUMAR}
+
+![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/aa2d9663-c41d-45df-b74e-de6f4bd2de86)
+
+### Propogation Delay and Transition Time
+
+Propogation delay is calculated as = time(out_x_thr) - (time_x_thr). If the propogation delay is negative, it can cause quite unexpected results - as an output is generated before the input. Hence, threshhold values should be selected properly. Delay threshold is usually 50% and slew rate threshold is usually 20%-80%.
+
+Transition time is calculated as = time(slew_high_x_thr) - time(slew_low_x_thr)
+
+{IMAGE CREDITS: VSDIAT ; SCREENSHOT TAKEN FROM LECTURE}
+
+![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/68f7dbf3-b2e1-4be0-977c-6a6ef80f69b6)
+
+## Section 3 - Design library cell using Magic Layout and ngspice characterization (21/07/2025 - 23/07/2025)
 
 ### Theory
+
+## Labs for CMOS Inverter NGSPICE Simulations
+### IO Placer Revision
+
+OpenLANE configurations can be changed inside the shell itself, on the fly. IO Mode is usually set to _random equidistant_. However, if we want to change this, we can do so through the following command typed after floorplan : **set ::env(FP_IO_MODE) 2**. After running this command, the IO [input - output] pins will not be equidistant in mode 2 (instead of the default - that is 1). 
+
+After this, we may re-run floorplan, and then check by seeing that the pins are placed based on of Hungarian algorithms now i.e. stacked one over the other. 
+
+> NOTE: changing the configuration on the fly will not change the runs/config.tcl, the configuration will only be available on the current session.
+
+{IMAGE CREDITS: VSDIAT; SCREENSHOT TAKEN FROM LECTURE}
+![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/64fccafc-180a-4e66-881a-80fabe083dc1)
+
+### SPICE Deck Creation For CMOS Inverter
+
+The SPICE deck contains connectivity information about netlists, inputs to be provided, TAPS for the outputs etc. The component values are taken, that are usually -: for the PMOS it is .375u/.25u (i.e. the channel length is .25 micron and and the channel width is .375 micron). Ideally, the PMOS should be 2 to 3 times wider than the NMOS. This is as the PMOS hole carrier is slower than the NMOS carrier, and since the rise and fall time must be matched, to reduce the resistance, we increase the width of the PMOS. The next steps are to identify and name the nodes:
+
+{IMAGE CREDITS: VSDIAT ; SCREENSHOT TAKEN FROM LECTURE}
+![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/e85697ff-266b-4fc5-83a9-c3fe0143ffcf)
+
+The syntax of the SPICE deck netlist PMOS and NMOS is _[component name] [drain] [gate] [source] [substrate] [transistor type] W=[width] L=[length]_. It is to be noted that all components in a netlist are described based on its node and values.
+
+> EXAMPLE SYNTAX - M1 OUT IN VDD VDD PMOS W=.375U L=.25u
+
+### SPICE Simulation Lab for CMOS Inverter
+
+The start of SPICE simulation is _.op_ where in Vin will be swept from 0 to 2.5 with 0.05V steps. The model file is **tsmc_025um_model.mod** that has all the technological parameters for the 0.25µm NMOS and PMOS.
+
+{IMAGE CREDITS: VSDIAT ; SCREENSHOT TAKEN FROM LECTURE}
+![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/bdec7a54-4667-4c1f-acbc-193062f2bcda).
+
+For SPICE simulation, there are various steps-:
+
+1) Open the NGSPICE simulator
+2) Source the Circuit File through _source_ command
+3) Execute it by the command _run_ and then use _setplot_ which allows one to view any plots possible from the simulations specified in the spice deck and will give you a choice for which simulation to be run
+4) Then, type _display_ which will give you a choice of nodes to be plotted which when _plot out vs in_ is typed will be plotted on a graph.
+
+{IMAGE CREDITS: VSDIAT ; SCREENSHOT TAKEN FROM LECTURE}
+![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/a4931bc2-cb5d-4e9e-8c14-54bc916c0b00)
+
+### Switching Threshhold Vm
+
+{IMAGE CREDITS: VSDIAT ; SCREENSHOT TAKEN FROM LECTURE}
+![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/da38d8fa-1309-485b-b68d-e0e35c819a0a)
+
+POINTS TO BE NOTED:
+
+- The shapes of the graphs are almost the same, through which we can derive the conclusion that CMOS is a robust device
+- The parameters that determine the robustness of the CMOS is the switching threshhold and the propogation delay
+
+The Switching Threshhold is the point where the the input voltage is equal to the output voltage and both PMOS & NMOS are in saturation region. When these are turned on, there is a high chances of leakage and  that the current flows directly from VDD to GND. Due to this, short circuit can be seen.
+
+{IMAGE CREDITS: VSDIAT ; SCREENSHOT TAKEN FROM LECTURE}
+![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/07f581e6-f0c1-49b3-b190-18c4d5a05157)
+
+### Static and Dynamic Simulation of CMOS Inverter
+
+To find Vm, we use DC TRANSFER ANALYSIS. Simulation is essentially a sweep from 0V to 2.5V by taking 0.05V steps.
+
+{IMAGE CREDITS: VSDIAT ; SCREENSHOT TAKEN FROM LECTURE}
+![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/7709cad2-6227-4878-baad-d3165745ef67)
+
+To find propogation delay, we use transient analysis when a pulse is applied to the CMOS.
+
+{IMAGE CREDITS: VSDIAT ; SCREENSHOT TAKEN FROM LECTURE}
+![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/1797489d-2861-4149-879b-496c616550db)
+
+{IMAGE CREDITS: VSDIAT ; SCREENSHOT TAKEN FROM LECTURE}
+![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/9dda14bc-11c3-4469-9d27-4ad812765df2)
+
+### Lab Steps to GitClone VSDSTD Cell Design
+
+We have been provided with a github repository wherein inverter files lie. It is available at this link - https://github.com/nickson-jose/vsdstdcelldesign. Steps to clone and observe the layout are as follows:
+1. Clone the custom inverter standard cell design from the github repository shared above
+2. Clone the repository with the custom inverter design through the command _git clone https://github.com/nickson-jose/vsdstdcelldesign_
+3. Subsequently, copy the tech file to the _vsdstdcelldesign_ directory (created through above step) by this command _cp /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign/_
+4. Then, open the custom inverter layout in MAGIC through this command: _magic -T sky130A.tech sky130_inv.mag &_cp__
+
+{IMAGE CREDITS: AUTHOR ; SCREENSHOT TAKEN FROM DEVICE}
+
+![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/307eb43f-4fe3-4d28-bca0-4e495d171489)
+
+## Inception of Layout and CMOS Fabrication Process
+
+The 16 MASK CMOS Fabrication process is as follows:
+
+### Create Active Regions
+
+1. The first step is to select a substrate - which is where the entirety of your design is fabricated. The most common substrate is a P doped Silicon Substrate. A substrate is ideally lesser doped than it's wells.
+
+2. The next step is creating an active region for transistors. It is to be noted that it is necessary to have isolation between the pockets, which can be done through
+   - Growing 40nm of Silicon Dioxide
+   - Depositing 80nm of Silicon Nitride.
+   - Depositing a layer of photoresist
+   - Deposit mask-1 layer on top of photoresist. It covers the photoresist layer that must not be etched away (protects the two transistor active regions)
+   - Applying UV light to remove the layers on the unmasked regions
+   - Removing mask-1 and photoresist layers
+   - Placing the chip in the furnace to grow the oxide in other areas
+   - Removing the Si3N4 layer using hot phosphoric acid to have only p-substrate and SiO2 left
+
+### Formation of N and P well
+
+3. P well and N well formation
+    + Deposition of photo resist layer and define the areas to protect by deposition of mask-2 and 3. Mask 2 protects the N-Well (PMOS side) while P-Well (NMOS side) is being fabricated and Mask 3 protects P-Well while N-Well is being formed
+    + Application of UV Light to remove the exposed photoresist
+    + Placing of chip in furnace to diffuse the boron and phosphorous to form wells. This process is called **Twintub** process.
+
+> Boron [B] is used to form P-Well and Phosporus [P] is used to form N-well
+
+### Formation of Gate Terminal
+
+Gate Terminal is where Threshhold Voltage is controled - as seen below:
+
+{IMAGE CREDITS: VSDIAT ; SCREENSHOT TAKEN FROM LECTURE}
+![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/2803bfef-5a63-4e51-a91f-ca5f3bd2f3c5)
+
+4. Formation of Gate
+     + Deposit photo resist layer to define the areas to be protected, and then subsequently deposit mask-4. Then, UV light is applied, and the exposed area of photoresist is removed
+     + Then, implantation of  low energy boron at the surface of p-well using mask-4 to control the threshold occurs
+     + Similarly, implantation of phosphorous/arsenic for n-well using mask-5 occurs
+     + Fixing the oxide which is damaged by implantation steps by removing extra SiO2 using the hydroflouric acid and re-grow high quality SiO2 on p-substrate to contol the oxide thickness occurs next
+     + Addition of polysilicon film subsequently occurs
+     + Then, mask-6 is added and etching using photolithography occurs
+     + Then, mask 6 is etched off to form the gate terminal
+
+### Lightly Doped Drain [LDD] Formation
+
+5. LDD Formation - the reason LDDs are created is to prevent the hot electron which can eventually cause Si - Si bonds break or create voltage that passes the 3.2eV barrier leading to issues with doped regions. The second major need is to prevent another effect, known as the short channel effect which can cause gate malfunctioning due to the drain field penetrating the channel.
+     + Mask 7  and 8 are created for NMOS (lightly doped N-type) and PMOS (lightly doped P-type) respectively.
+     + Heavily doped impurity (N+ for NMOS and P+ for PMOS) are added for the actual source and drain but the lightly doped impurity which are also added help maintain spacing between the source and drain and prevent hot electron effect and short channel effect.
+     + To protect the lightly doped regions, we also add SiO2 and create spacers using _plasma anisotropic_ etching
+
+### Source and Drain Formation
+
+6. Source and Drain Formation
+     + Thin screen oxide is added to avoid channeling during. Channeling is when implantations dig too deep into substrate which is very problematic
+     + We create Mask-9 is for N+ implantation and Mask-10 for P+ implantation
+     + The side wall spacers maintain the N-/P- while implanting the N+/P+
+     + High temperature annealing is done as well
+
+### Local Interconnect Formation
+
+7. Steps to Form Connects and Interconnects [LOCAL] - these are very important as they help in controlling the electrical charecteristics. These are also the only things accessible to the end user.
+     + The thin screen oxide is removed for opening up the source, drain and gate for contact building. We use Titanium as it has less resistance.
+     + Titanium Diselenide [Ti2Si2] is used for local interconnects
+     + Mask 11 is formed and Titanium Nitride [Ti N] is etched off by RCA cleaning to create the first level contact
+
+### Higher Level Metal Formation
+
+8. Higher Level Metal Formation - These steps are very similar to the previous steps and are quite easy to understand.
+     + The previous steps in the MASK process have created an uneven surface layer. A layer of Silicon Dioxide [SiO2] doped with phosphorous or boron -[boron reduces the temperature] [known as phosphosilicate glass and borophosphosilicate glass] is deposited on the wafer surface.
+     + Then, the surface is polished using the CMP [Chemical Mechanical Polishing] technique to planarize the surface.
+     + Contact holes are created through photolithography.
+     + Various masks are used for the various processes after this:-
+          - Mask 12 is created for the first contact holes
+          - Mask 13 is used for the first Aluminum contact layer, which the contact holes are connected to.
+          - Mask 14 creates the second contact holes
+          - Mask 15 is similarly, for the second Aluminum contact layer
+          - Finally, we use Mask 16 for making contact to topmost layer
+
+### Lab Introduction to SKY130 Basic Layers Layout and LEF using Inverter
+
+{IMAGE CREDITS: DEEPTHY SANTHAKUMAR}
+
+![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/c4eb61e9-abe9-40fb-8191-0a032c8cd91c)
+
+> In sky130A, the first layer is the LDD or local-i and then the m1, m2 layers and so on.
+> The power and ground lines are located in m1.
+> When polysilicon crosses ndiffusion then NMOS and if polysilicon crosses pdiffusion then PMOS is created.
+> The output of the layout is the _LEF_ file, which is used by the router in APR to get the location of standard cell pins for proper routing. So it is essentially an abstract form of the layout of a standard cell.
 
 ### Implementation
 
@@ -747,9 +1107,209 @@ Screenshot of magic window with rule implemented
 
 ![Screenshot from 2024-03-22 01-10-25](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/49b1004d-f860-4ca7-86f4-4d79784a01cf)
 
-## Section 4 - Pre-layout timing analysis and importance of good clock tree (22/03/2024 - 24/03/2024)
+## Section 4 - Pre-layout timing analysis and importance of good clock tree (24/07/2025 - 26/07/2025)
 
 ### Theory
+(This section contains only essential theoretical information related to the task before the lab steps)
+## Timing Modelling Using Delay Tables
+### Lab Steps To Convert Grid Information Into Track Information
+
+_sky130_inv.mag_ located in _vsdstdcelldesign_ directory contains all information like PG and port information, logic etc. OpenLANE is a PnR tool and hence does not require the full information present in the _.mag_ file. The only information that we require are the boundary, power and ground rails, and the inputs & outputs information. This is the reason of we use **.lef** files. Hence, our next  objective is to extract the LEF file from the MAGIC file and plug that into the picorv32a design. The guidelines to be followed while making a standard cell are -:
+
+1. The input and output ports must lie at the intersection of the horizontal and vertical tracks (this is to ensure the routes can reach the ports).
+2. The width and height of the standard cell must be odd multiples of the track's horizontal and vertical pitch respectively
+
+## Timing Analysis With Ideal Clocks Using Open STA
+### Setup Timing Analysis And Introduction to Flip-Flop Setup Time
+
+Consider an ideal clock [i.e. the clock tree is not built yet] where perform timing analysis to understand the parameters [later the same can be done using real clocks]. Specifications are as mentioned in the picture [Clock frequncy (F) is 1GHz and clock period (T) is 1ns]. -:
+
+{IMAGE CREDITS: VSDIAT; SCREENSHOT TAKEN FROM LECTURE}
+
+![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/39437ad9-3953-4955-ac5f-e15c60e3adf0)
+
+{IMAGE CREDITS: VSDIAT; SCREENSHOT TAKEN FROM LECTURE}
+
+![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/f12cdcd3-e080-4d25-977c-aed998a2e060)
+
+The setup timing analysis equation is = Θ < T - S
+
+> Θ = Combinational delay which includes clk to Q delay of launch flop and internal propagation delay of all gates between launch and capture flop
+> 
+> T = Time period, also called the required time
+> 
+> S = Setup time. As demonstrated below, signal must settle on the middle (input of Mux 2) before clock tansists to 1 so the delay due to Mux 1 must be considered, this delay is the setup time.
+
+{IMAGE CREDITS: VSDIAT; SCREENSHOT TAKEN FROM LECTURE}
+
+![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/0f2910d0-0c34-40f1-aaf5-40c311efe669)
+
+### Introduction to Clock Jitter and Uncertainty
+
+CLK signals are sent to the device by the PLL (Phase Locked Loop). This clock source is expected to send clock signal at 0, T, 2T etc. However, even these clock sources might or might not be able to provide a clock **exactly** at Tns because of its own in-built variation known as jitter. Jitter can be thought of as short-term fluctuations in the timing of signal transitions, which can result in deviations from the expected clock or data timing.
+
+{IMAGE CREDITS: VSDIAT; SCREENSHOT TAKEN FROM LECTURE}
+
+![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/a298949c-3101-44c3-b15a-d60efbc9eca8)
+
+{IMAGE CREDITS: VSDIAT; SCREENSHOT TAKEN FROM LECTURE}
+
+![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/ca549e3e-4895-4a62-b3e6-4924e2394d2d)
+
+Hence, we see that a more realistic equation for setup time is = Θ < T - S - SU
+
+> SU = Setup uncertainty due to jitter which is temporary variation of clock period, which is due to non-idealities of PLL.
+
+{IMAGE CREDITS: VSDIAT; SCREENSHOT TAKEN FROM LECTURE}
+
+![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/48e91fce-8564-4295-9b94-4b50afa9288f)
+
+### Lab Steps to Configure OpenSTA for Post-Synth Timings Analysis
+
+STA can either be -:
++ single corner - which only uses the LIB_TYPICAL library which is the one used in pre-layout(pos-synthesis) STA
++ multi corner - multicorner which uses LIB_SLOWEST(setup analysis, high temp low voltage),LIB_FASTEST(hold analysis, low temp high voltage), and LIB_TYPICAL libraries
+
+1. In the location *Desktop/Work/tools/openlane_working_dir/openlane_ there is a file named *pre_sta.conf* on which we will be doing the prelayout analysis. The file contains the following contents-:
+
+{IMAGE CREDITS: VSDIAT; SCREENSHOT TAKEN FROM LECTURE AND SUBSEQUENTLY MODIFIED FOR MORE CLARITY}
+
+![drawn](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/11cfc5f7-384f-4991-90ea-b8957b2afb74)
+
+2. This is the SDC file on which analysis will be done is located at *Desktop/Work/tools/openlane_working_dir/openlane/designs/picorv2a/src* and is named *my_base.src_. It contains the following contents -:
+
+{IMAGE CREDITS: VSDIAT; SCREENSHOT TAKEN FROM LECTURE AND SUBSEQUENTLY MODIFIED FOR CLARITY}
+
+![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/053fee45-34e9-4e2a-9b11-fa496c0fcb4e)
+
+3. The various commands to be run and their functions are -:
+
+   + _create_clock_ -it creates clock for the port with specified time period.
+     
+   + *set_input_delay* and *set_output_delay* - defines the arrival/exit time of an input/output signal relative to the input clock. [This is the delay of the signal coming from an external block and internal delay of the signal to be propagated to external ports] This adds a delay of Xns relative to clk to all signals going to input ports, and delay of Yns relative to CLK to all signals going to output ports.
+     
+   + *set_max_fanout* - specifies maximum fanout count for all output ports in the design.
+     
+   + *set_driving_cell* - models an external driver at the input port of the current design.
+     
+   + *set_load* sets a capacitive load to all output ports.
+
+4. Execute *sta pre_sta.conf* and check timing.
+
+### Lab Steps to Optimize Synthesis to Reduce Setup Violations
+
+To reduce negative slack, focus on large delays. Net with big fanout might cause delay increase. Use report_net -connections <net_name> to display connections. First thing we can do is to go back to OpenLane and reduce fanouts by setting ::env(SYNTH_MAX_FANOUT) 4 then run_synthesis again.
+
+For reducing the negative slack obtained, we must focus on the large delays and try to reduce them. Increases in delays are majorly caused by nets with big fanouts, which result in high load cap which causes high delay. To display the connections of the nets, the commands **report_net -connections <net_name>** can be used. Now, looking upon this output, we realise that fanouts must be reduced. This can be done by going back to OpenLANE and reducing fanouts by typing **::env(SYNTH_MAX_FANOUT) 4**. After this, we can run_synthesis again and obtain a expected value for slack.
+
+### Lab Steps to do Basic Timing ECO
+
+However, if we want to reduce the negative slack even more, we can upsize the cells with high fanouts so that bigger drivers will be used. Now, since we cannot change load capacitance but can change the cell size, we can increase the size of the cell for a large driver to drive large cap loads leading to lesser delay. This is often done in iterations until we reach the desired slack in a process known as Timing ECO [Engineering Change Order]
+
+## Clock Tree Synthesis TritonCTS and Signal Integrity
+### Clock Tree Routing and Buffering Using H-Tree Algorithm
+
+{IMAGE CREDITS: VSDIAT; SCREENSHOT TAKEN FROM LECTURE}
+
+![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/b7ebc401-975d-4c82-94cb-980d7c724bb0)
+
+Take into account the CLK port going to the various flip-flops in the above picture. It's purpose is to connect the port to the CLK pins of the many flip-flops based on the connectivity information given. In the above picture, we have blindly made connections and hence t2 is greater than t1. Skew is the difference between t2 and t1. CLK skew, as explained earlier, refers to the variation in arrival times of the clock signal at different points within a digital system. More simply, CLK skew is essentially the difference in propogation delay of the CLK signal as it moves along various paths. It can occur due to -:
+- differences in wire lengths
+- variations in signal routing paths
+- variations in buffer delays
+- other physical and environmental factors
+
+Due to this, some parts of the system can recieve CLK signals earlier than or after the rest of the system. Minimizing clock skew is essential as to -:
+- ensure proper synchronization of signals
+- reliable operation of the digital circuit.
+
+> NOTE : Ideally, the skew should be zero.
+
+Now, since the skew is not minimum, or even close to minimum in the above picture, we can call this tree a **_bad tree_**. To optimize this scenario, we can use H-Tree routing. It analyses the clock route by calculating the distance from the source to all the endpoints and deciding on a midpoint to start building tree. Subsequently, it finds another midpoint and creates divergents in the wire. Eventually, after repeating this process, the CLK reaches all the flip-flops at almost the same time, while splitting up at various midpoints.
+
+{IMAGE CREDITS: VSDIAT; SCREENSHOT TAKEN FROM LECTURE}
+
+![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/0fdaf27e-01a3-4ba6-b32b-5bc4d4a6beaf)
+
+It is expected that the input CLK signal is exactly reproduced at the output. However, this does not happen in H-Tree routing due to inherent resistance and capacitance in physical wires, which may cause the signal to experience distortion. We can solve this problem by inserting buffers/repeaters along the path for signal integrity. In the past, we have also talked about another kind of repeaters, used in data paths. The key differences between repeaters used in clock and data paths respectively lie in their **rise and fall times**. Clock buffers have **same rise and fall times**, to ensure uniform signal propagation throughout the clock distribution network. Contrastingly, data buffers exhibit **varying rise and fall times**, which may differ based on the characteristics of the data being transmitted and the components involved in processing it.
+
+### Crosswalk and Clock Net Shielding
+
+Clock nets are critical nets in the design because clock tree is built is such a fashion that the skew is zero. There is a phenomenon called crosstalk where a signal transmitted on one channel  interacts with or interferes with signals on adjacent channels leading to distortion, noise, timing errors etc, which can cause the clock tree structure will be deteriorated. To solve this, all the clock nets are shielded [protected]. If there is a wire adjacent to such shields, then there exists a huge coupling capacitance causing two issues - (i) glitch and (ii) delta delay.
+
+Whenever there is a switching activity happening in the aggressor, then the coupling capacitance is so strong that it directly affects the net close to it named _the victim net_, which is without any shielding. This causes a dip in the voltage, resulting in glitch. Due to a glitch, there can be incorrect data in memory, which can cause inaccurate functionality. To solve this, we do shielding which protects the victim nets by breaking the coupling capacitance between the aggressor and the victim. These shielding nets are either in the form of Vdd or Vss. The shields do not switch, and hence the victim will not switch as well.
+
+{IMAGE CREDITS: VSDIAT; SCREENSHOT TAKEN FROM LECTURE}
+
+![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/e19160f6-cd94-4572-9470-336db0ca6a7a)
+
+### Lab Steps to run CTS using TritonCTS
+
+After completion of Timing ECO, we see that the timing currently is still above 1. To reduce it, we can go through the results and switch the cells causing a lot of slack to buffers. After this the negative slack is reduced to below 1.  
+
+{IMAGE CREDITS: VSDIAT; SCREENSHOT TAKEN FROM LECTURE}
+
+![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/cae7aaf6-c89f-4b6e-a631-7fbd4cdfe5e2)
+
+{IMAGE CREDITS: VSDIAT; SCREENSHOT TAKEN FROM LECTURE}
+
+![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/463cc177-c4da-428e-a2e4-fd5d751e0f73)
+
+
+## Timing Analysis  With Real Clocks Using Open STA
+### Setup Timing Analysis Using Real Clocks
+
+Now the clock tree is built and timing analysis is done on real clocks.
+
+{IMAGE CREDITS: VSDIAT; SCREENSHOT TAKEN FROM LECTURE}
+
+![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/cc3c96ca-817f-4559-aefa-baa6a3583b78)
+
+{IMAGE CREDITS: VSDIAT; SCREENSHOT TAKEN FROM LECTURE}
+
+![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/bdd0b465-92b3-4d34-b389-eb0545d5048e)
+
+> delta1 = launch flop clock network delay
+>
+> 
+> delta2 = capture flop clock delay
+
+Any design satisfying Slack [i.e. Data required time - Data arrival time] is ready to work in the given frequency. However, if this equation is violated, then slack will become negative which is not expected. We expect slack to be either zero or positive.
+
+### Hold Timing Analysis Using Real Clocks
+
+Hold Time is delay [time] needed by the MUX2 model within a flip-flop to transfer certain data outside. [i.e. how long it **holds** the data]. It is the time period during which the launch flop must retain dat before it reaches the capture flop. Unlike setup analysis, which has two rising clock edges, hold analysis occurs on the same rising clock edge for both the launch and capture flops. 
+
+A hold violation occurs when the path is too fast, impacted by factors such as -:
+ - combinational delay
+ - clock buffer delays
+ - hold time.
+ 
+ > Notably, parameters such as time period and setup uncertainty hold no significance, as both launch and capture flops receive identical rising clock edges during hold analysis.
+
+{IMAGE CREDITS: VSDIAT; SCREENSHOT TAKEN FROM LECTURE}
+
+![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/367dc2a4-b701-4ef6-9cf0-a6e2048b6564)
+
+{IMAGE CREDITS: VSDIAT; SCREENSHOT TAKEN FROM LECTURE}
+
+![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/3ed9941f-37df-4ec4-8dc7-28191831cdc1)
+
+{IMAGE CREDITS: VSDIAT; SCREENSHOT TAKEN FROM LECTURE}
+
+![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/5ad6901b-57b8-4d7a-a8f1-9215f70ca7d9)
+
+{IMAGE CREDITS: VSDIAT; SCREENSHOT TAKEN FROM LECTURE}
+
+![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/82b6ac76-15a9-4a0d-b496-76e1a9d3b012)
+
+{IMAGE CREDITS: VSDIAT; SCREENSHOT TAKEN FROM LECTURE}
+
+![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/f781227a-ddff-4d2a-8878-c54bb95127c6)
+
+{IMAGE CREDITS: VSDIAT; SCREENSHOT TAKEN FROM LECTURE}
+
+![image](https://github.com/ojasvi-shah/Advanced-Physical-Design-Using-OpenLANE--Ojasvi-Shah/assets/163879237/72ae228c-3900-494f-93ea-ffbd30880ad9)
 
 ### Implementation
 
@@ -1540,7 +2100,7 @@ Screenshots of commands run and timing report generated
 ![Screenshot from 2024-03-26 13-50-12](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/bf6c116b-e31c-4dce-b04f-a75430b1d03b)
 ![Screenshot from 2024-03-26 13-53-30](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/a26e9d23-d448-4512-8676-8a2b3fb22572)
 
-## Section 5 - Final steps for RTL2GDS using tritonRoute and openSTA (25/03/2024 - 26/03/2024)
+## Section 5 - Final steps for RTL2GDS using tritonRoute and openSTA (27/07/2025 - 29/07/2025)
 
 ### Theory
 
