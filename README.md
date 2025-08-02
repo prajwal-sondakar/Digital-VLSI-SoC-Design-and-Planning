@@ -197,7 +197,7 @@ exit
 Screenshots of running each commands
 
 <img width="945" height="517" alt="Capture100" src="https://github.com/user-attachments/assets/ca6b86a1-b6d6-4f41-b5d0-276bbb1d19dd" />
-<img width="946" height="520" alt="Capture1000" src="https://github.com/user-attachments/assets/033bb264-7140-4035-b0ff-de258d6e3cf8" />
+<img width="946" height="520" alt="image" src="https://github.com/user-attachments/assets/e911a4db-c4b1-48da-9723-c0bd7fd518a2" />
 ![Slide3](https://github.com/user-attachments/assets/4495487f-56e6-4bbf-98f7-7ed1ed35d654)
 
 
@@ -2281,6 +2281,7 @@ Screenshots of commands run and timing report generated
 * [Kunal Ghosh](https://github.com/kunalg123), Co-founder, VSD Corp. Pvt. Ltd.
 * [Nickson P Jose](https://github.com/nickson-jose), Physical Design Engineer, Intel Corporation.
 * [R. Timothy Edwards](https://github.com/RTimothyEdwards), Senior Vice President of Analog and Design, efabless Corporation.
+
 
 
 
