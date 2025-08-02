@@ -1019,8 +1019,8 @@ Incorrectly implemented poly.9 rule no drc violation even though spacing < 0.48u
 
 New commands inserted in sky130A.tech file to update drc
 
-![Screenshot from 2024-03-21 23-58-44](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/dc30df54-3282-42f0-8e7d-fc4d8877ed64)
-![Screenshot from 2024-03-21 23-09-50](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/d112ca07-854c-41e7-8822-c269e21defea)
+<img width="1366" height="768" alt="Capture18" src="https://github.com/user-attachments/assets/251ecaf4-5780-453c-975b-0254b39beb86" />
+<img width="1366" height="768" alt="Capture19" src="https://github.com/user-attachments/assets/c4a822b2-f92a-4d64-8a09-fa422905f390" />
 
 Commands to run in tkcon window
 
@@ -1037,22 +1037,22 @@ drc why
 
 Screenshot of magic window with rule implemented
 
-![Screenshot from 2024-03-21 23-13-11](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/b18e8e07-ef0f-40fb-9b6d-8aae878a23c6)
-![Screenshot from 2024-03-22 00-00-40](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/d5afe8d8-691b-485d-a89a-8f901e18b56e)
+<img width="1366" height="768" alt="Capture22" src="https://github.com/user-attachments/assets/fea09feb-cb53-4055-babb-04eff743426b" />
+<img width="1366" height="768" alt="Capture21" src="https://github.com/user-attachments/assets/e27bad67-c1eb-403d-a7b1-98bebadfef68" />
 
 **Incorrectly implemented difftap.2 simple rule correction**
 
 Screenshot of difftap rules
 
-![Screenshot from 2024-03-22 00-14-47](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/086b7a66-b60a-470a-b5c0-a5ac938ebec3)
+<img width="749" height="411" alt="image" src="https://github.com/user-attachments/assets/7bc9e021-b4ee-4df1-94b2-c47ebf817784" />
 
-Incorrectly implemented difftap.2 rule no drc violation even though spacing < 0.42u
 
-![Screenshot from 2024-03-22 00-14-36](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/a2d0d739-2df5-4eb5-ab78-c80d366e24e4)
+
+
 
 New commands inserted in sky130A.tech file to update drc
 
-![Screenshot from 2024-03-22 00-26-43](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/b5892f9b-9c5d-4b1b-baa2-6fe45f3965b1)
+<img width="1366" height="768" alt="Capture20" src="https://github.com/user-attachments/assets/1ed5897b-431d-4f54-a5da-69c2632243ad" />
 
 Commands to run in tkcon window
 
@@ -1069,22 +1069,22 @@ drc why
 
 Screenshot of magic window with rule implemented
 
-![Screenshot from 2024-03-22 00-29-22](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/a3f92160-6701-48fb-b6cf-e4c41dc4a531)
+<img width="1366" height="768" alt="Capture22" src="https://github.com/user-attachments/assets/62eaa264-f497-490b-8b43-354d3e02a716" />
 
 **Incorrectly implemented nwell.4 complex rule correction**
 
 Screenshot of nwell rules
 
-![Screenshot from 2024-03-22 00-51-34](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/4ad4901d-0b9a-4339-89e3-7bb3fce2766d)
+<img width="723" height="347" alt="image" src="https://github.com/user-attachments/assets/3f79a81f-195f-4b4a-93fc-060eaf2094bc" />
 
 Incorrectly implemented nwell.4 rule no drc violation even though no tap present in nwell
 
-![Screenshot from 2024-03-22 00-52-51](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/87da8944-0ad8-455d-97ec-3909eac656c3)
+<img width="747" height="409" alt="image" src="https://github.com/user-attachments/assets/0ed5f165-ba90-421c-86b3-3c14cd20e4e5" />
 
 New commands inserted in sky130A.tech file to update drc
 
-![Screenshot from 2024-03-22 01-03-42](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/886c6930-6314-4a6f-97d9-6b8423444ac0)
-![Screenshot from 2024-03-22 01-04-04](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/d9808e9a-42c2-4421-9b82-2ef65a5a1ad7)
+<img width="749" height="416" alt="image" src="https://github.com/user-attachments/assets/923d2c84-0b82-4e22-89d6-032bc211ccf4" />
+<img width="748" height="372" alt="image" src="https://github.com/user-attachments/assets/036f00f0-f865-441a-bc8c-4ae356330b44" />
 
 Commands to run in tkcon window
 
@@ -1104,7 +1104,7 @@ drc why
 
 Screenshot of magic window with rule implemented
 
-![Screenshot from 2024-03-22 01-10-25](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/49b1004d-f860-4ca7-86f4-4d79784a01cf)
+<img width="1366" height="768" alt="Capture23" src="https://github.com/user-attachments/assets/d570d5ee-0235-476b-93bd-a321f756dc43" />
 
 ## Section 4 - Pre-layout timing analysis and importance of good clock tree (24/07/2025 - 26/07/2025)
 
@@ -1366,7 +1366,7 @@ magic -T sky130A.tech sky130_inv.mag &
 
 Screenshot of tracks.info of sky130_fd_sc_hd
 
-![Screenshot from 2024-03-24 13-38-09](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/2a35eb22-dd5f-4b67-9712-cbd2a84b526a)
+<img width="1366" height="768" alt="Capture24" src="https://github.com/user-attachments/assets/f1d5cfed-a5d8-43ef-b4a1-c9cdba31433c" />
 
 Commands for tkcon window to set grid as tracks of locali layer
 
@@ -1380,11 +1380,11 @@ grid 0.46um 0.34um 0.23um 0.17um
 
 Screenshot of commands run
 
-![Screenshot from 2024-03-24 13-49-55](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/d0d9c106-4e05-4e73-a7ed-3f718cb69b42)
+<img width="1366" height="768" alt="Capture25" src="https://github.com/user-attachments/assets/94728ef0-b82a-4cbc-9047-0f5767e59432" />
 
 Condition 1 verified
 
-![Screenshot from 2024-03-24 13-51-55](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/b74b31c8-cdc7-4dcb-9467-5a1787bfa5fe)
+<img width="1366" height="768" alt="Capture26" src="https://github.com/user-attachments/assets/bc17b136-7aa5-499a-b9fc-17969d34cb5c" />
 
 Condition 2 verified
 
@@ -1392,7 +1392,7 @@ Condition 2 verified
 Horizontal\ track\ pitch = 0.46\ um
 ```
 
-![Screenshot from 2024-03-24 13-55-07](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/e045e5b6-3592-4242-995d-de2049438ec5)
+<img width="1366" height="768" alt="Capture27" src="https://github.com/user-attachments/assets/be81a614-1386-4f11-bcd8-b2a760a6211c" />
 
 ```math
 Width\ of\ standard\ cell = 1.38\ um = 0.46 * 3
@@ -1404,7 +1404,7 @@ Condition 3 verified
 Vertical\ track\ pitch = 0.34\ um
 ```
 
-![Screenshot from 2024-03-24 13-58-32](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/a471b022-91ac-466a-8dd9-72b90f9c16c1)
+<img width="1366" height="768" alt="Capture28" src="https://github.com/user-attachments/assets/80e8d876-4166-46b2-adee-6e74ffba097a" />
 
 ```math
 Height\ of\ standard\ cell = 2.72\ um = 0.34 * 8
@@ -1428,7 +1428,7 @@ magic -T sky130A.tech sky130_vsdinv.mag &
 
 Screenshot of newly saved layout
 
-![Screenshot from 2024-03-24 14-33-20](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/0beb4300-2ebc-4364-8e3d-37fdb6d52f5b)
+<img width="1366" height="768" alt="Capture29" src="https://github.com/user-attachments/assets/33e7b078-8c1a-459d-8905-689d2c946e50" />
 
 #### 3. Generate lef from the layout.
 
@@ -1441,11 +1441,11 @@ lef write
 
 Screenshot of command run
 
-![Screenshot from 2024-03-24 14-35-55](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/6928c3dc-e633-414d-9ac1-71349cad4b9b)
+<img width="1366" height="768" alt="Capture32" src="https://github.com/user-attachments/assets/5adb2cac-63ad-4929-9095-58ceefa47960" />
 
 Screenshot of newly created lef file
 
-![Screenshot from 2024-03-24 14-37-19](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/15557990-33b4-4402-8c72-39b75da9ed07)
+<img width="1366" height="768" alt="Capture31" src="https://github.com/user-attachments/assets/a0b75813-3b0b-486b-b3de-556b3927b32e" />
 
 #### 4. Copy the newly generated lef and associated required lib files to 'picorv32a' design 'src' directory.
 
@@ -1467,8 +1467,8 @@ ls ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src/
 
 Screenshot of commands run
 
-![Screenshot from 2024-03-24 14-55-23](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/78559cee-ad3f-4301-83ae-df99f8417be3)
-
+<img width="1366" height="768" alt="Capture33" src="https://github.com/user-attachments/assets/7fcc5c9e-08e5-4ae0-87b2-35d3964089cf" />
+<img width="1366" height="768" alt="Capture34" src="https://github.com/user-attachments/assets/6f536ed9-4940-4fde-94b6-4118775d4248" />
 #### 5. Edit 'config.tcl' to change lib file and add the new extra lef into the openlane flow.
 
 Commands to be added to config.tcl to include our custom cell in the openlane flow
@@ -1484,7 +1484,7 @@ set ::env(EXTRA_LEFS) [glob $::env(OPENLANE_ROOT)/designs/$::env(DESIGN_NAME)/sr
 
 Edited config.tcl to include the added lef and change library to ones we added in src directory
 
-![Screenshot from 2024-03-24 15-29-56](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/7b18f216-1160-4a65-91fd-998495ad3175)
+<img width="858" height="483" alt="image" src="https://github.com/user-attachments/assets/78116139-caee-4abe-9251-ed4f1abf685d" />
 
 #### 6. Run openlane flow synthesis with newly inserted custom inverter cell.
 
@@ -1518,17 +1518,17 @@ run_synthesis
 
 Screenshots of commands run
 
-![Screenshot from 2024-03-24 15-36-46](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/4170c3c5-1a95-4165-9461-03b298cc20ef)
-![Screenshot from 2024-03-24 15-37-32](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/8f52942c-4b28-4abd-b9a0-d48f20a8255f)
-![Screenshot from 2024-03-24 15-37-44](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/47849bfd-dc47-4d9c-9077-7fb672df4ead)
-![Screenshot from 2024-03-24 15-45-08](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/0bc13ad3-d800-4681-b39d-8b64c9c9104f)
+<img width="1366" height="765" alt="Capture38" src="https://github.com/user-attachments/assets/cd4ce45b-cd4d-40cd-acd5-9c6c29fd31b6" />
+<img width="1366" height="768" alt="Capture39" src="https://github.com/user-attachments/assets/13b3b0af-56a4-4f25-9753-df194033ddde" />
+<img width="1366" height="768" alt="Capture40" src="https://github.com/user-attachments/assets/b4b9642f-3ca7-4637-8f4e-d7b7bbc53494" />
+<img width="1366" height="768" alt="Capture40 1" src="https://github.com/user-attachments/assets/fe3ae685-b7cc-44e1-ab54-5be22257e153" />
 
 #### 7. Remove/reduce the newly introduced violations with the introduction of custom inverter cell by modifying design parameters.
 
 Noting down current design values generated before modifying parameters to improve timing
 
-![Screenshot from 2024-03-24 16-00-18](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/33fe575a-7459-4c59-8329-f142ba2099e5)
-![Screenshot from 2024-03-24 16-13-01](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/13e42f0a-69e7-410d-b901-bc6c4976b7e1)
+<img width="1366" height="768" alt="Capture41 2" src="https://github.com/user-attachments/assets/ca212856-bfb5-4470-ac0e-8e3e5a8dec37" />
+<img width="1366" height="768" alt="Capture40 1" src="https://github.com/user-attachments/assets/767ed346-2d71-4281-8108-7c6325ba0971" />
 
 Commands to view and change parameters to improve timing and run synthesis
 
@@ -1564,18 +1564,18 @@ run_synthesis
 
 Screenshot of merged.lef in `tmp` directory with our custom inverter as macro
 
-![Screenshot from 2024-03-24 23-46-25](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/55de3fc6-498d-4456-8e79-ae6e175d2ca6)
+<img width="1366" height="768" alt="Capture50" src="https://github.com/user-attachments/assets/d3451ed8-fc64-4e16-b12d-a8addbbc0bc9" />
 
 Screenshots of commands run
 
-![Screenshot from 2024-03-24 17-09-04](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/62209cce-90c2-4c52-a218-25805b57ef3f)
-![Screenshot from 2024-03-24 17-09-19](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/2d933bd5-a3b5-4d6d-a22f-5332bc3bf279)
-![Screenshot from 2024-03-24 17-10-46](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/a25b66af-9cf9-4ba9-adb6-f38ff85fa7cd)
+<img width="1366" height="767" alt="Capture201" src="https://github.com/user-attachments/assets/9413777e-386c-4a39-bbf8-f72170dbc9af" />
+<img width="1366" height="768" alt="Capture42" src="https://github.com/user-attachments/assets/b4831102-1f94-4360-80a8-d3481f903426" />
 
-Comparing to previously noted run values area has increased and worst negative slack has become 0
 
-![Screenshot from 2024-03-24 17-11-08](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/81418082-747e-4702-b5ad-bb3e450eceb3)
-![Screenshot from 2024-03-24 17-11-19](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/a1bdb538-527c-4edd-877d-d4263e777321)
+
+
+
+
 
 #### 8. Once synthesis has accepted our custom inverter we can now run floorplan and placement and verify the cell is accepted in PnR flow.
 
@@ -1588,8 +1588,8 @@ run_floorplan
 
 Screenshots of command run
 
-![Screenshot from 2024-03-24 17-12-09](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/10a18995-0b7c-4f44-8ef4-cca9239652da)
-![Screenshot from 2024-03-24 17-37-50](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/72966b69-cea0-4ae7-8dc0-c7130a8c750a)
+<img width="1366" height="768" alt="Capture44" src="https://github.com/user-attachments/assets/8261694b-8a6f-410f-bca0-63f64efa865d" />
+<img width="1366" height="768" alt="Capture47" src="https://github.com/user-attachments/assets/1d9d18e5-fc18-4e82-a7c1-7468352e4693" />
 
 Since we are facing unexpected un-explainable error while using `run_floorplan` command, we can instead use the following set of commands available based on information from `Desktop/work/tools/openlane_working_dir/openlane/scripts/tcl_commands/floorplan.tcl` and also based on `Floorplan Commands` section in `Desktop/work/tools/openlane_working_dir/openlane/docs/source/OpenLANE_commands.md`
 
@@ -1602,9 +1602,9 @@ tap_decap_or
 
 Screenshots of commands run
 
-![Screenshot from 2024-03-24 23-38-07](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/07534ca7-b0db-4ea2-bbcd-ea7d44241d6c)
-![Screenshot from 2024-03-24 23-38-54](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/c9705150-f953-4372-a811-88cae6378d2f)
-![Screenshot from 2024-03-24 23-39-56](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/c16bccc6-c650-4a65-b1de-7035609520d7)
+<img width="1366" height="768" alt="Capture51" src="https://github.com/user-attachments/assets/9b2b31d6-f4fb-403d-911a-a959d1b2a7d4" />
+<img width="1366" height="767" alt="Capture52" src="https://github.com/user-attachments/assets/d9613dc7-a333-467a-9514-50c2494490ee" />
+<img width="1366" height="768" alt="Capture53" src="https://github.com/user-attachments/assets/15066026-5b2b-4893-8873-f4848d91fb23" />
 
 Now that floorplan is done we can do placement using following command
 
@@ -1615,8 +1615,8 @@ run_placement
 
 Screenshots of command run
 
-![Screenshot from 2024-03-24 23-49-29](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/12788798-aac5-4cfb-9254-69fb3d4e8e70)
-![Screenshot from 2024-03-24 23-51-08](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/41eaeae7-d398-417c-b89f-e9014a92a699)
+
+<img width="1366" height="768" alt="Capture54" src="https://github.com/user-attachments/assets/3cc4595e-c1af-469c-9deb-1d6a5d614f70" />
 
 Commands to load placement def in magic in another terminal
 
@@ -1629,12 +1629,12 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 ```
 
 Screenshot of placement def in magic
-
-![Screenshot from 2024-03-25 00-16-54](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/9cb8b463-a0dd-402f-b881-2504686b8d04)
+<img width="1366" height="768" alt="Capture60" src="https://github.com/user-attachments/assets/20dfcdf0-e001-4f89-89d1-a323ec4f8a67" />
+<img width="1366" height="768" alt="Capture61" src="https://github.com/user-attachments/assets/aca1f441-eccc-45aa-80ef-d91cd715ec10" />
 
 Screenshot of custom inverter inserted in placement def with proper abutment
 
-![Screenshot from 2024-03-25 00-00-10](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/2fb0fc71-4784-4987-a55e-5d71dd35edbf)
+<img width="1366" height="768" alt="Capture62" src="https://github.com/user-attachments/assets/b1a810f1-c753-440f-b510-47dc0ebfabce" />
 
 Command for tkcon window to view internal layers of cells
 
@@ -1645,8 +1645,8 @@ expand
 
 Abutment of power pins with other cell from library clearly visible
 
-![Screenshot from 2024-03-25 00-01-46](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/b52d756d-430c-4e43-b514-db0084dc1794)
-![Screenshot from 2024-03-25 00-05-35](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/b8342668-c3fe-437e-b701-8c8be3740682)
+<img width="1366" height="768" alt="Capture63" src="https://github.com/user-attachments/assets/176f3ba2-5839-43ab-8aa8-f91da289ab0e" />
+
 
 #### 9. Do Post-Synthesis timing analysis with OpenSTA tool.
 
@@ -1682,19 +1682,19 @@ set ::env(SYNTH_SIZING) 1
 # Now that the design is prepped and ready, we can run synthesis using following command
 run_synthesis
 ```
-
 Commands run final screenshot
-
-![Screenshot from 2024-03-26 05-52-18](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/790d4852-7f1d-47b5-a64f-5735f6064b61)
+<img width="1361" height="761" alt="Capture300" src="https://github.com/user-attachments/assets/989dd8d5-f800-4615-970a-2f58f894d587" />
+<img width="1366" height="766" alt="Capture302" src="https://github.com/user-attachments/assets/be90e98d-9aa0-481f-9cfe-302a1f515df5" />
+<img width="1366" height="768" alt="Capture303" src="https://github.com/user-attachments/assets/e789780e-85d9-4f54-bc61-a9631ce0dbe5" />
 
 Newly created `pre_sta.conf` for STA analysis in `openlane` directory
 
-![Screenshot from 2024-03-26 05-53-06](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/0a02d055-f012-44bd-a750-4508bbfc771e)
+<img width="1366" height="768" alt="Capture305" src="https://github.com/user-attachments/assets/94672884-e4e2-4248-a750-4d2ccb643d3b" />
 
 Newly created `my_base.sdc` for STA analysis in `openlane/designs/picorv32a/src` directory based on the file `openlane/scripts/base.sdc`
 
-![Screenshot from 2024-03-26 05-55-17](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/8c917d87-5507-4079-ba6b-facbf18c238f)
-![Screenshot from 2024-03-26 05-55-38](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/e07d05db-2f06-47ab-bff7-2af88c39d001)
+<img width="1366" height="768" alt="Capture307" src="https://github.com/user-attachments/assets/669d2e93-6959-425c-a024-c02eb95efe97" />
+<img width="1366" height="768" alt="Capture308" src="https://github.com/user-attachments/assets/5886aac2-2215-41e4-91a5-d0e99e6a986d" />
 
 Commands to run STA in another terminal
 
@@ -1708,10 +1708,10 @@ sta pre_sta.conf
 
 Screenshots of commands run
 
-![Screenshot from 2024-03-26 06-04-28](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/32def177-5173-4dd7-ba3b-44e37846644c)
-![Screenshot from 2024-03-26 06-05-07](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/d8b8c46a-3a8b-458c-8c75-03f6577f5d17)
-![Screenshot from 2024-03-26 06-05-53](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/ab396c91-430f-41ca-b9a4-dda72a91c4d5)
-![Screenshot from 2024-03-26 06-08-51](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/aa1d50b0-9cb1-45bf-a641-b64842166b48)
+<img width="1366" height="768" alt="Capture311" src="https://github.com/user-attachments/assets/99b66a8b-3568-44ad-847f-6c086c831ae2" />
+<img width="1366" height="768" alt="Capture310" src="https://github.com/user-attachments/assets/65c2e169-92b2-437e-8532-b78356ae825d" />
+<img width="1366" height="763" alt="Capture312" src="https://github.com/user-attachments/assets/f6284597-ad16-4937-8427-e1f3a06f12b1" />
+<img width="1366" height="768" alt="Capture306" src="https://github.com/user-attachments/assets/3791d9c5-da2f-49e9-8428-1646f774ef37" />
 
 Since more fanout is causing more delay we can add parameter to reduce fanout and do synthesis again
 
@@ -1740,7 +1740,7 @@ run_synthesis
 
 Commands run final screenshot
 
-![Screenshot from 2024-03-26 06-20-29](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/c5869cf5-ab95-46f9-9fd1-dc91e92455d8)
+<img width="1366" height="768" alt="Capture313" src="https://github.com/user-attachments/assets/e9735aa0-3aca-4dc2-90fa-7d65c3d7df42" />
 
 Commands to run STA in another terminal
 
@@ -1754,16 +1754,16 @@ sta pre_sta.conf
 
 Screenshots of commands run
 
-![Screenshot from 2024-03-26 06-22-31](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/0f3247fc-aaad-4e98-b23e-bdc9a361d08c)
-![Screenshot from 2024-03-26 06-22-41](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/9fcc3975-0e03-4515-aee5-04b7c1c6a315)
-![Screenshot from 2024-03-26 06-22-50](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/e19db773-3995-4af4-b0a3-188b02fdf454)
-![Screenshot from 2024-03-26 06-23-01](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/c22c85fb-1a94-4639-a731-da4c364d1a78)
+<img width="1366" height="768" alt="Capture316" src="https://github.com/user-attachments/assets/11102b05-742f-4eeb-a9a1-82b6b9228428" />
+<img width="1366" height="768" alt="Capture317" src="https://github.com/user-attachments/assets/c04af94b-6fac-4475-bf2c-1df39624a6f4" />
+<img width="1366" height="768" alt="Capture318" src="https://github.com/user-attachments/assets/463be0af-16ab-4daa-b9d8-45cd84bfd096" />
+<img width="1366" height="768" alt="Capture319" src="https://github.com/user-attachments/assets/6bd4e502-1cd1-41f6-89d8-8a8dc30c8f60" />
 
 #### 10. Make timing ECO fixes to remove all violations.
 
 OR gate of drive strength 2 is driving 4 fanouts
 
-![Screenshot from 2024-03-26 06-55-46](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/73c58332-a212-4a24-b853-e8cae3b385a6)
+<img width="1366" height="763" alt="Capture312" src="https://github.com/user-attachments/assets/1fe15ac3-91fc-4d78-9df9-f1a2d2fe38fb" />
 
 Commands to perform analysis and optimize timing by replacing with OR gate of drive strength 4
 
@@ -1783,14 +1783,14 @@ report_checks -fields {net cap slew input_pins} -digits 4
 
 Result - slack reduced
 
-![Screenshot from 2024-03-26 07-02-44](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/c50c6023-1836-468d-a8c3-955b02e4224c)
-![Screenshot from 2024-03-26 07-04-08](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/6059a511-9977-4d9e-8dde-8939f0e1b8f7)
-![Screenshot from 2024-03-26 09-42-15](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/df3dba3c-9445-4d51-9842-bf4410f05cf5)
-![Screenshot from 2024-03-26 07-07-50](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/f141d1ff-4e21-4f9a-ab47-19579a686ac4)
+<img width="1366" height="768" alt="Capture321" src="https://github.com/user-attachments/assets/cecf267c-bc84-4250-8efe-7d76f9cbf062" />
+<img width="1366" height="768" alt="Capture321" src="https://github.com/user-attachments/assets/42dc49fb-aaea-44ce-8842-0537275c78e6" />
+
+<img width="1366" height="767" alt="Capture322" src="https://github.com/user-attachments/assets/85fd95b0-3c9a-4499-bcc8-f8d8cf120460" />
 
 OR gate of drive strength 2 is driving 4 fanouts
 
-![Screenshot from 2024-03-26 09-46-23](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/3f66eed9-c43d-483e-ab85-21d70452b81f)
+<img width="855" height="471" alt="image" src="https://github.com/user-attachments/assets/9ffb6310-67f3-4271-ac1f-dd6ef2eacd60" />
 
 Commands to perform analysis and optimize timing by replacing with OR gate of drive strength 4
 
@@ -1807,13 +1807,13 @@ report_checks -fields {net cap slew input_pins} -digits 4
 
 Result - slack reduced
 
-![Screenshot from 2024-03-26 09-49-29](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/d896c1fa-078e-4fe1-8e4d-60fae870d672)
-![Screenshot from 2024-03-26 09-50-13](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/a21abd89-b92a-4d28-b065-6b8b523026de)
-![Screenshot from 2024-03-26 09-50-33](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/9b961126-3de7-450e-9789-5009ca7f6a16)
+<img width="857" height="465" alt="image" src="https://github.com/user-attachments/assets/7f42469c-588e-4fa1-8eaa-2134e62dff88" />
+
+<img width="856" height="466" alt="image" src="https://github.com/user-attachments/assets/c1e92bd5-5c5b-4797-8570-f3d38a5826c4" />
 
 OR gate of drive strength 2 driving OA gate has more delay
 
-![Screenshot from 2024-03-26 10-22-10](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/7669eeef-7b93-4cfd-a152-17eec772496a)
+<img width="858" height="467" alt="image" src="https://github.com/user-attachments/assets/c070c55a-48c2-4a24-8327-f50b523dd5eb" />
 
 Commands to perform analysis and optimize timing by replacing with OR gate of drive strength 4
 
@@ -1830,12 +1830,12 @@ report_checks -fields {net cap slew input_pins} -digits 4
 
 Result - slack reduced
 
-![Screenshot from 2024-03-26 10-29-31](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/c63cf6a1-582d-43e5-907f-e292b94cc086)
-![Screenshot from 2024-03-26 10-29-55](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/6495c2e8-78c8-41d2-b783-628f36b982c5)
+<img width="858" height="464" alt="image" src="https://github.com/user-attachments/assets/72992f7c-b0c1-4e3c-9629-d8efb59efd29" />
+<img width="856" height="467" alt="image" src="https://github.com/user-attachments/assets/7d34557f-fdf8-4667-ae97-5418c784c4c6" />
 
 OR gate of drive strength 2 driving OA gate has more delay
 
-![Screenshot from 2024-03-26 10-32-27](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/4185dc98-a065-49d3-a92f-fb4b02f23ee5)
+<img width="857" height="464" alt="image" src="https://github.com/user-attachments/assets/dc2891cb-5e40-4826-aeb9-7e491753ba6b" />
 
 Commands to perform analysis and optimize timing by replacing with OR gate of drive strength 4
 
@@ -1852,8 +1852,8 @@ report_checks -fields {net cap slew input_pins} -digits 4
 
 Result - slack reduced
 
-![Screenshot from 2024-03-26 10-36-59](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/be71b3a4-efe1-4239-be5a-28ccebd2b7f4)
-![Screenshot from 2024-03-26 10-37-14](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/2ae759b3-f9a7-478f-a34a-3f8706347eca)
+<img width="858" height="463" alt="image" src="https://github.com/user-attachments/assets/1aed1e63-83c3-4a76-85c5-2ac08e4cf44e" />
+<img width="856" height="468" alt="image" src="https://github.com/user-attachments/assets/72495561-a341-45b6-9ca7-8e855c013fd6" />
 
 Commands to verify instance `_14506_`  is replaced with `sky130_fd_sc_hd__or4_4`
 
@@ -1864,7 +1864,7 @@ report_checks -from _29043_ -to _30440_ -through _14506_
 
 Screenshot of replaced instance
 
-![Screenshot from 2024-03-26 10-43-04](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/970b3cb7-fe10-4b5e-99c9-85059714f8f2)
+<img width="856" height="467" alt="image" src="https://github.com/user-attachments/assets/0396dce5-5d7a-497c-8393-09563ec08741" />
 
 *We started ECO fixes at wns -23.9000 and now we stand at wns -22.6173 we reduced around 1.2827 ns of violation*
 
@@ -1888,9 +1888,6 @@ cp picorv32a.synthesis.v picorv32a.synthesis_old.v
 ls
 ```
 
-Screenshot of commands run
-
-![Screenshot from 2024-03-26 10-54-15](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/90c90853-0664-44d7-8ff2-573621935870)
 
 Commands to write verilog
 
@@ -1907,11 +1904,11 @@ exit
 
 Screenshot of commands run
 
-![Screenshot from 2024-03-26 11-02-19](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/c6c8ce7f-5219-41bc-a5a8-47b0e1c62c7c)
+![Slide2](https://github.com/user-attachments/assets/79d4cc9f-5d84-4d4c-a632-cde19b9091fc)
 
 Verified that the netlist is overwritten by checking that instance `_14506_`  is replaced with `sky130_fd_sc_hd__or4_4`
 
-![Screenshot from 2024-03-26 11-01-25](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/1ddb66da-64cb-426d-8d78-30370c63dacb)
+![Slide3](https://github.com/user-attachments/assets/ed135675-aa2c-4fcc-a507-efb228052f5f)
 
 Since we confirmed that netlist is replaced and will be loaded in PnR but since we want to follow up on the earlier 0 violation design we are continuing with the clean design to further stages
 
@@ -1951,14 +1948,14 @@ run_cts
 
 Screenshots of commands run
 
-![Screenshot from 2024-03-26 11-33-14](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/a0f223bc-3cbb-4bb1-8c7e-d800f1a4efd7)
-![Screenshot from 2024-03-26 11-33-22](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/9bd610a8-fd5e-452b-94b2-5a5fc76db5e9)
-![Screenshot from 2024-03-26 11-35-40](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/283d9b5e-fc48-45a3-8548-c68fc8966f46)
-![Screenshot from 2024-03-26 11-36-16](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/af866818-af6f-4bc4-96c0-cf3c99839003)
-![Screenshot from 2024-03-26 11-37-36](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/55aa5130-8a9f-48d6-abc8-7aace68b58c8)
-![Screenshot from 2024-03-26 11-38-26](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/755fc79a-2a77-402b-aa11-33799e31ee09)
-![Screenshot from 2024-03-26 11-39-53](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/45fdc85e-cc32-4b08-954e-bd78dcec0891)
-![Screenshot from 2024-03-26 12-00-48](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/5deb6b89-c81e-4b4d-a225-badc1f7c7299)
+![Slide4](https://github.com/user-attachments/assets/e7bbebf2-b4b3-412d-b1a1-cad95e793fe6)
+![Slide5](https://github.com/user-attachments/assets/b90e5525-9327-4fd4-b699-654d2ec23f70)
+![Slide6](https://github.com/user-attachments/assets/985db442-b0ef-4c9e-b108-b58865562c57)
+![Slide7](https://github.com/user-attachments/assets/7798b162-e1d8-479a-95c1-1329d460bcfc)
+![Slide8](https://github.com/user-attachments/assets/27387098-e10c-4ffd-a6df-2a39db998c1c)
+![Slide9](https://github.com/user-attachments/assets/39e5f957-2064-463a-8599-4104d5454d27)
+![Slide10](https://github.com/user-attachments/assets/ca8b23ef-e218-4360-b90f-88188ccc1aa1)
+![Slide11](https://github.com/user-attachments/assets/7f327ee7-18c3-49d8-9994-b3a95d67aded)
 
 #### 12. Post-CTS OpenROAD timing analysis.
 
@@ -2007,10 +2004,10 @@ exit
 
 Screenshots of commands run and timing report generated
 
-![Screenshot from 2024-03-26 12-55-00](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/ee26dfa7-715a-4df7-97e7-4c6e54d16522)
-![Screenshot from 2024-03-26 12-57-40](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/e04a4dfd-000c-406b-bdaa-f5314c4eedef)
-![Screenshot from 2024-03-26 12-58-12](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/ac27d567-1b72-444d-a638-9be2db677ae2)
-![Screenshot from 2024-03-26 13-09-57](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/e63cac70-072d-4453-992e-076b94f8f1a2)
+![Slide12](https://github.com/user-attachments/assets/44996640-1bb4-4b6e-9e4b-71c992506be2)
+![Slide13](https://github.com/user-attachments/assets/4cfebbc5-b333-4432-8074-cb779772c66f)
+![Slide14](https://github.com/user-attachments/assets/6d8e0d68-eeec-43d1-a63d-8ab0b658f1ec)
+![Slide15](https://github.com/user-attachments/assets/3f81fbfd-d4d4-4684-8185-c7adeebfe13e)
 
 #### 13. Explore post-CTS OpenROAD timing analysis by removing 'sky130_fd_sc_hd__clkbuf_1' cell from clock buffer list variable 'CTS_CLK_BUFFER_LIST'.
 
@@ -2092,12 +2089,12 @@ echo $::env(CTS_CLK_BUFFER_LIST)
 
 Screenshots of commands run and timing report generated
 
-![Screenshot from 2024-03-26 13-42-03](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/2191f13b-ff76-4281-9d3c-52cbf12f9142)
-![Screenshot from 2024-03-26 13-45-28](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/3dcd6efe-d31a-4f72-aede-be1cdd7b078f)
-![Screenshot from 2024-03-26 13-48-01](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/2cb2c6fd-1e8c-4921-8553-7dcfb51258e5)
-![Screenshot from 2024-03-26 13-48-13](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/70353613-86f2-432c-a1d8-821083e8c209)
-![Screenshot from 2024-03-26 13-50-12](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/bf6c116b-e31c-4dce-b04f-a75430b1d03b)
-![Screenshot from 2024-03-26 13-53-30](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/a26e9d23-d448-4512-8676-8a2b3fb22572)
+![Slide16](https://github.com/user-attachments/assets/bf7a9d70-9ad8-4f74-a2c5-87ae3c5c3af1)
+![Slide17](https://github.com/user-attachments/assets/c40c28e0-9d24-48a1-b8e0-f8d0d94410d5)
+![Slide18](https://github.com/user-attachments/assets/15302214-18d4-435b-9af1-a7f65eb45316)
+![Slide19](https://github.com/user-attachments/assets/10a9229c-d4d5-4eba-80c2-3848699f28bb)
+![Slide20](https://github.com/user-attachments/assets/9ab991cf-fb47-4426-86ee-776cd2a09557)
+![Slide21](https://github.com/user-attachments/assets/eec0e648-6eb6-48be-ae0b-3642ee6f53fa)
 
 ## Section 5 - Final steps for RTL2GDS using tritonRoute and openSTA (27/07/2025 - 29/07/2025)
 
@@ -2170,8 +2167,8 @@ gen_pdn
 
 Screenshots of power distribution network run
 
-![Screenshot from 2024-03-26 14-22-34](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/dd916806-6688-4c96-b1af-156b2d4acfe6)
-![Screenshot from 2024-03-26 14-22-46](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/1f6ade75-93c2-4b76-bc46-77d1d532a84c)
+![Slide22](https://github.com/user-attachments/assets/0499d91a-ecb8-4854-894c-b9da515a672d)
+![Slide23](https://github.com/user-attachments/assets/f9b00c07-7df3-460e-9523-aaebfd910cd5)
 
 Commands to load PDN def in magic in another terminal
 
@@ -2185,9 +2182,9 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 
 Screenshots of PDN def
 
-![Screenshot from 2024-03-26 14-30-52](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/b13997fd-296c-4213-b4f9-8f66a7375e47)
-![Screenshot from 2024-03-26 14-32-24](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/79b5f158-acf4-4065-a0ec-61007ab465d0)
-![Screenshot from 2024-03-26 14-34-03](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/bee921ce-03d5-49fb-a9fc-bcc6e3402f8c)
+![Slide24](https://github.com/user-attachments/assets/5ea19a4f-5118-474d-a972-cdb530b197f1)
+![Slide25](https://github.com/user-attachments/assets/bfc7f97b-b6ea-4c3e-b325-d89a504f4c41)
+![Slide26](https://github.com/user-attachments/assets/3cf98a1d-9d4a-437d-a4cc-098b6c709a44)
 
 #### 2. Perfrom detailed routing using TritonRoute and explore the routed layout.
 
@@ -2206,9 +2203,8 @@ run_routing
 
 Screenshots of routing run
 
-![Screenshot from 2024-03-26 14-48-29](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/f166be26-f49a-4001-abee-ce395857990f)
-![Screenshot from 2024-03-26 15-38-39](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/c0c8f372-0293-4fdd-a0a3-691f164e7bed)
-![Screenshot from 2024-03-26 15-29-38](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/70a99289-06ea-4eb8-b3b0-4147395c6f9c)
+![Slide27](https://github.com/user-attachments/assets/f168ad51-7f10-46e7-9767-3583a2d0d103)
+![Slide28](https://github.com/user-attachments/assets/a864b1c3-0112-4486-a993-8c961ba99667)
 
 Commands to load routed def in magic in another terminal
 
@@ -2222,14 +2218,13 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 
 Screenshots of routed def
 
-![Screenshot from 2024-03-26 15-33-12](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/6eade230-eb96-4d7b-b7a9-7a7db9c2c8b7)
-![Screenshot from 2024-03-26 15-30-36](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/b1900c55-7470-41b2-8b4f-3af871494d99)
-![Screenshot from 2024-03-26 15-31-29](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/5faaca5b-fb6e-4abd-946d-6531b35489b8)
-![Screenshot from 2024-03-26 15-32-20](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/594ef79b-4755-4934-a087-33fb24996526)
+![Slide29](https://github.com/user-attachments/assets/23e47da2-1a08-4ea6-851c-3f2a40690d0b)
+![Slide30](https://github.com/user-attachments/assets/a4643f48-3569-4486-9b07-d1bb4345791c)
+![Slide31](https://github.com/user-attachments/assets/aaa145d8-9bb0-4ba9-bfe4-d1894bb52d64)
 
 Screenshot of fast route guide present in `openlane/designs/picorv32a/runs/26-03_08-45/tmp/routing` directory
 
-![Screenshot from 2024-03-26 15-41-18](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/1dc38a57-03c9-45c3-acdb-063731a86433)
+![Slide32](https://github.com/user-attachments/assets/82899fc3-991f-46e5-9d6f-abe9cad33136)
 
 #### 3. Post-Route parasitic extraction using SPEF extractor.
 
@@ -2290,19 +2285,17 @@ exit
 
 Screenshots of commands run and timing report generated
 
-![Screenshot from 2024-03-26 23-16-16](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/72ef3e8d-7ca2-4b60-89ea-de053f9c2902)
-![Screenshot from 2024-03-26 23-17-09](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/5cac9ce5-420a-4eaa-b5f4-09286701e550)
-![Screenshot from 2024-03-26 23-17-32](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/7d809f14-66b6-4dd6-8161-2ad8371cfaf9)
-![Screenshot from 2024-03-26 23-17-56](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/64ccb1d8-74aa-42b0-88d4-a0f9588d2ca2)
+![Slide33](https://github.com/user-attachments/assets/f6b672dd-c365-4bc9-b831-bb16dbd2e57a)
+![Slide34](https://github.com/user-attachments/assets/89e19a88-5fc4-4839-b1ac-207259b4e26b)
+![Slide35](https://github.com/user-attachments/assets/98c4e65f-4a8f-4359-bc7e-57697217124f)
 
-# Certificate
 
-![Digital-VLSI-SoC-Design-and-Planning-Certificate](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/6f292f50-f95b-471c-8dac-bf0ea7345c9b)
 
 # Acknowledgements
 
 * [Kunal Ghosh](https://github.com/kunalg123), Co-founder, VSD Corp. Pvt. Ltd.
 * [Nickson P Jose](https://github.com/nickson-jose), Physical Design Engineer, Intel Corporation.
 * [R. Timothy Edwards](https://github.com/RTimothyEdwards), Senior Vice President of Analog and Design, efabless Corporation.
+
 
 
