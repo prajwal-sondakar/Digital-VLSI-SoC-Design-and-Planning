@@ -1,12 +1,11 @@
-<!---
-![Digital_VLSI_SoC_Design_ _Planning_(RTL2GDSII_Flow)1](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/92eb860b-7a88-4c6f-8143-ad3e09fd9c5b)
-![Digital_VLSI_SoC_Design_ _Planning_(RTL2GDSII_Flow) (1)1](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/4285c5e4-d5df-43e4-b460-ead45ff67f9b)
--->
+
+
+>#### Author - *Prajwal M Sondakar*  
 
 # Digital VLSI SoC Design and Planning
 
+>#### This repository contains all the tasks, labs, and learnings from the course, demonstrating my understanding of RTL to GDSII design flow using OpenLANE and Sky130 PDK.
 
-> 2 Week digital VLSI SoC design and planning workshop with complete RTL2GDSII flow organised by VSD in collaboration with NASSCOM
 
 ## Section 1 - Inception of open-source EDA, OpenLANE and Sky130 PDK (16/07/2025 - 17/07/2025)
 
@@ -158,9 +157,7 @@ Flop\ Ratio = \frac{Number\ of\ D\ Flip\ Flops}{Total\ Number\ of\ Cells}
 Percentage\ of\ DFF's = Flop\ Ratio * 100
 ```
 
-* All section 1 logs, reports and results can be found in following run folder:
 
-[Section 1 Run - 15-03_15-51](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/tree/main/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/15-03_15-51)
 
 #### 1. Run 'picorv32a' design synthesis using OpenLANE flow and generate necessary outputs.
 
@@ -411,7 +408,7 @@ Commands to load floorplan def in magic in another terminal
 
 ```bash
 # Change directory to path containing generated floorplan def
-cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/17-03_12-06/results/floorplan/
+cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/16-07_05-10/results/floorplan/
 
 # Command to load the floorplan def in magic tool
 magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &
@@ -461,7 +458,7 @@ Commands to load placement def in magic in another terminal
 
 ```bash
 # Change directory to path containing generated placement def
-cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/17-03_12-06/results/placement/
+cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/16-07_05-10/results/placement/
 
 # Command to load the placement def in magic tool
 magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &
@@ -746,13 +743,7 @@ Gate Terminal is where Threshhold Voltage is controled - as seen below:
 5. Post-layout ngspice simulations.
 6. Find problem in the DRC section of the old magic tech file for the skywater process and fix them.
 
-* Section 3 - Tasks 1 to 5 files, reports and logs can be found in the following folder:
 
-[Section 3 - Tasks 1 to 5 \(vsdstdcelldesign\)](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/tree/main/Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign)
-
-* Section 3 - Task 6 files, reports and logs can be found in the following folder:
-
-[Section 3 - Task 6 \(drc_tests\)](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/tree/main/drc_tests)
 
 #### 1. Clone custom inverter standard cell design from github repository
 
@@ -888,7 +879,7 @@ Rise\ transition\ time = Time\ taken\ for\ output\ to\ rise\ to\ 80\% - Time\ ta
 <img width="1366" height="768" alt="Capture6" src="https://github.com/user-attachments/assets/0e8ad547-caf3-4a16-98fe-9c263a1d2426" />
 
 ```math
-Rise\ transition\ time = 2.24638 - 2.18242 = 0.06396\ ns = 63.96\ ps
+Rise\ transition\ time = 2.24684 - 2.18294 = 0.06390\ ns = 63.90\ ps
 ```
 
 Fall transition time calculation
@@ -914,7 +905,7 @@ Fall\ transition\ time = Time\ taken\ for\ output\ to\ fall\ to\ 20\% - Time\ ta
 <img width="1366" height="768" alt="Capture10" src="https://github.com/user-attachments/assets/a55e0816-1b0c-4b0f-ae13-905011f172f0" />
 
 ```math
-Fall\ transition\ time = 4.0955 - 4.0536 = 0.0419\ ns = 41.9\ ps
+Fall\ transition\ time = 4.0935 - 4.0482 = 0.0453\ ns = 41.3\ ps
 ```
 
 Rise Cell Delay Calculation
@@ -932,7 +923,7 @@ Rise\ Cell\ Delay = Time\ taken\ for\ output\ to\ rise\ to\ 50\% - Time\ taken\ 
 <img width="1366" height="768" alt="Capture12" src="https://github.com/user-attachments/assets/9563ed79-daf5-4c87-b20e-58177cd25d11" />
 
 ```math
-Rise\ Cell\ Delay = 2.21144 - 2.15008 = 0.06136\ ns = 61.36\ ps
+Rise\ Cell\ Delay = 2.21126 - 2.15045 = 0.06081\ ns = 60.8\ ps
 ```
 
 Fall Cell Delay Calculation
@@ -1312,25 +1303,9 @@ A hold violation occurs when the path is too fast, impacted by factors such as -
 12. Post-CTS OpenROAD timing analysis.
 13. Explore post-CTS OpenROAD timing analysis by removing 'sky130_fd_sc_hd__clkbuf_1' cell from clock buffer list variable 'CTS_CLK_BUFFER_LIST'.
 
-* Section 4 - Tasks 1 to 4 files, reports and logs can be found in the following folder:
 
-[Section 4 - Tasks 1 to 4 \(vsdstdcelldesign\)](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/tree/main/Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign)
 
-* Section 4 - Task 4 files, reports and logs can be found in the following folder:
 
-[Section 4 - Task 4 \(src\)](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/tree/main/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src)
-
-* Section 4 - Task 5 files, reports and logs can be found in the following folder:
-
-[Section 4 - Task 5 \(picorv32a\)](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/tree/main/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a)
-
-* Section 4 - Tasks 6 to 8 & 11 to 13 logs, reports and results can be found in following run folder:
-
-[Section 4 - Tasks 6 to 8 & 11 to 13 Run \(24-03_10-03\)](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/tree/main/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/24-03_10-03)
-
-* Section 4 - Tasks 9 to 11 logs, reports and results can be found in following run folder:
-
-[Section 4 - Tasks 9 to 11 Run \(25-03_18-52\)](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/tree/main/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/25-03_18-52)
 
 #### 1. Fix up small DRC errors and verify the design is ready to be inserted into our flow.
 
@@ -1519,7 +1494,7 @@ Commands to view and change parameters to improve timing and run synthesis
 
 ```tcl
 # Now once again we have to prep design so as to update variables
-prep -design picorv32a -tag 24-03_10-03 -overwrite
+prep -design picorv32a -tag 23-07_05-23 -overwrite
 
 # Addiitional commands to include newly added lef to openlane flow merged.lef
 set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
@@ -1607,7 +1582,7 @@ Commands to load placement def in magic in another terminal
 
 ```bash
 # Change directory to path containing generated placement def
-cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/24-03_10-03/results/placement/
+cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/23-07_05-23/results/placement/
 
 # Command to load the placement def in magic tool
 magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &
@@ -1704,7 +1679,7 @@ Commands to include new lef and perform synthesis
 
 ```tcl
 # Now the OpenLANE flow is ready to run any design and initially we have to prep the design creating some necessary files and directories for running a specific design which in our case is 'picorv32a'
-prep -design picorv32a -tag 25-03_18-52 -overwrite
+prep -design picorv32a -tag 23-07_18-52 -overwrite
 
 # Adiitional commands to include newly added lef to openlane flow
 set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
@@ -1861,7 +1836,7 @@ Commands to make copy of netlist
 
 ```bash
 # Change from home directory to synthesis results directory
-cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/25-03_18-52/results/synthesis/
+cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/23-07_18-52/results/synthesis/
 
 # List contents of the directory
 ls
@@ -1881,7 +1856,7 @@ Commands to write verilog
 help write_verilog
 
 # Overwriting current synthesis netlist
-write_verilog /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/25-03_18-52/results/synthesis/picorv32a.synthesis.v
+write_verilog /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/23-07_18-52/results/synthesis/picorv32a.synthesis.v
 
 # Exit from OpenSTA since timing analysis is done
 exit
@@ -1901,7 +1876,7 @@ Commands load the design and run necessary stages
 
 ```tcl
 # Now once again we have to prep design so as to update variables
-prep -design picorv32a -tag 24-03_10-03 -overwrite
+prep -design picorv32a -tag 23-07_05-23 -overwrite
 
 # Addiitional commands to include newly added lef to openlane flow merged.lef
 set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
@@ -1951,10 +1926,10 @@ Commands to be run in OpenLANE flow to do OpenROAD timing analysis with integrat
 openroad
 
 # Reading lef file
-read_lef /openLANE_flow/designs/picorv32a/runs/24-03_10-03/tmp/merged.lef
+read_lef /openLANE_flow/designs/picorv32a/runs/23-07_05-23/tmp/merged.lef
 
 # Reading def file
-read_def /openLANE_flow/designs/picorv32a/runs/24-03_10-03/results/cts/picorv32a.cts.def
+read_def /openLANE_flow/designs/picorv32a/runs/23-07_05-23/results/cts/picorv32a.cts.def
 
 # Creating an OpenROAD database to work with
 write_db pico_cts.db
@@ -1963,7 +1938,7 @@ write_db pico_cts.db
 read_db pico_cts.db
 
 # Read netlist post CTS
-read_verilog /openLANE_flow/designs/picorv32a/runs/24-03_10-03/results/synthesis/picorv32a.synthesis_cts.v
+read_verilog /openLANE_flow/designs/picorv32a/runs/23-07_05-23/results/synthesis/picorv32a.synthesis_cts.v
 
 # Read library for design
 read_liberty $::env(LIB_SYNTH_COMPLETE)
@@ -2012,7 +1987,7 @@ echo $::env(CTS_CLK_BUFFER_LIST)
 echo $::env(CURRENT_DEF)
 
 # Setting def as placement def
-set ::env(CURRENT_DEF) /openLANE_flow/designs/picorv32a/runs/24-03_10-03/results/placement/picorv32a.placement.def
+set ::env(CURRENT_DEF) /openLANE_flow/designs/picorv32a/runs/23-07_05-23/results/placement/picorv32a.placement.def
 
 # Run CTS again
 run_cts
@@ -2024,10 +1999,10 @@ echo $::env(CTS_CLK_BUFFER_LIST)
 openroad
 
 # Reading lef file
-read_lef /openLANE_flow/designs/picorv32a/runs/24-03_10-03/tmp/merged.lef
+read_lef /openLANE_flow/designs/picorv32a/runs/23-07_05-23/tmp/merged.lef
 
 # Reading def file
-read_def /openLANE_flow/designs/picorv32a/runs/24-03_10-03/results/cts/picorv32a.cts.def
+read_def /openLANE_flow/designs/picorv32a/runs/23-07_05-23/results/cts/picorv32a.cts.def
 
 # Creating an OpenROAD database to work with
 write_db pico_cts1.db
@@ -2036,7 +2011,7 @@ write_db pico_cts1.db
 read_db pico_cts.db
 
 # Read netlist post CTS
-read_verilog /openLANE_flow/designs/picorv32a/runs/24-03_10-03/results/synthesis/picorv32a.synthesis_cts.v
+read_verilog /openLANE_flow/designs/picorv32a/runs/23-07_05-23/results/synthesis/picorv32a.synthesis_cts.v
 
 # Read library for design
 read_liberty $::env(LIB_SYNTH_COMPLETE)
@@ -2093,9 +2068,7 @@ Screenshots of commands run and timing report generated
 3. Post-Route parasitic extraction using SPEF extractor.
 4. Post-Route OpenSTA timing analysis with the extracted parasitics of the route.
 
-* All section 5 logs, reports and results can be found in following run folder:
 
-[Section 5 Run - 26-03_08-45](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/tree/main/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/26-03_08-45)
 
 #### 1. Perform generation of Power Distribution Network (PDN) and explore the PDN layout.
 
@@ -2159,7 +2132,7 @@ Commands to load PDN def in magic in another terminal
 
 ```bash
 # Change directory to path containing generated PDN def
-cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/26-03_08-45/tmp/floorplan/
+cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/30-07_06-45/tmp/floorplan/
 
 # Command to load the PDN def in magic tool
 magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read 14-pdn.def &
@@ -2195,7 +2168,7 @@ Commands to load routed def in magic in another terminal
 
 ```bash
 # Change directory to path containing routed def
-cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/26-03_08-45/results/routing/
+cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/30-07_06-45/results/routing/
 
 # Command to load the routed def in magic tool
 magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.def &
@@ -2207,7 +2180,7 @@ Screenshots of routed def
 ![Slide30](https://github.com/user-attachments/assets/a4643f48-3569-4486-9b07-d1bb4345791c)
 ![Slide31](https://github.com/user-attachments/assets/aaa145d8-9bb0-4ba9-bfe4-d1894bb52d64)
 
-Screenshot of fast route guide present in `openlane/designs/picorv32a/runs/26-03_08-45/tmp/routing` directory
+Screenshot of fast route guide present in `openlane/designs/picorv32a/runs/30-07_06-45/tmp/routing` directory
 
 ![Slide32](https://github.com/user-attachments/assets/82899fc3-991f-46e5-9d6f-abe9cad33136)
 
@@ -2220,7 +2193,7 @@ Commands for SPEF extraction using external tool
 cd Desktop/work/tools/SPEF_EXTRACTOR
 
 # Command extract spef
-python3 main.py /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/26-03_08-45/tmp/merged.lef /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/26-03_08-45/results/routing/picorv32a.def
+python3 main.py /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/30-07_06-45/tmp/merged.lef /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/30-07_06-45/results/routing/picorv32a.def
 ```
 
 #### 4. Post-Route OpenSTA timing analysis with the extracted parasitics of the route.
@@ -2232,10 +2205,10 @@ Commands to be run in OpenLANE flow to do OpenROAD timing analysis with integrat
 openroad
 
 # Reading lef file
-read_lef /openLANE_flow/designs/picorv32a/runs/26-03_08-45/tmp/merged.lef
+read_lef /openLANE_flow/designs/picorv32a/runs/30-07_06-45/tmp/merged.lef
 
 # Reading def file
-read_def /openLANE_flow/designs/picorv32a/runs/26-03_08-45/results/routing/picorv32a.def
+read_def /openLANE_flow/designs/picorv32a/runs/30-07_06-45/results/routing/picorv32a.def
 
 # Creating an OpenROAD database to work with
 write_db pico_route.db
@@ -2244,7 +2217,7 @@ write_db pico_route.db
 read_db pico_route.db
 
 # Read netlist post CTS
-read_verilog /openLANE_flow/designs/picorv32a/runs/26-03_08-45/results/synthesis/picorv32a.synthesis_preroute.v
+read_verilog /openLANE_flow/designs/picorv32a/runs/30-07_06-45/results/synthesis/picorv32a.synthesis_preroute.v
 
 # Read library for design
 read_liberty $::env(LIB_SYNTH_COMPLETE)
@@ -2259,7 +2232,7 @@ read_sdc /openLANE_flow/designs/picorv32a/src/my_base.sdc
 set_propagated_clock [all_clocks]
 
 # Read SPEF
-read_spef /openLANE_flow/designs/picorv32a/runs/26-03_08-45/results/routing/picorv32a.spef
+read_spef /openLANE_flow/designs/picorv32a/runs/30-07_06-45/results/routing/picorv32a.spef
 
 # Generating custom timing report
 report_checks -path_delay min_max -fields {slew trans net cap input_pins} -format full_clock_expanded -digits 4
@@ -2276,13 +2249,38 @@ Screenshots of commands run and timing report generated
 
 
 
-# Acknowledgements
+# Acknowledgements and Bibliography
 
-* [Kunal Ghosh](https://github.com/kunalg123), Co-founder, VSD Corp. Pvt. Ltd.
-* [Nickson P Jose](https://github.com/nickson-jose), Physical Design Engineer, Intel Corporation.
-* [R. Timothy Edwards](https://github.com/RTimothyEdwards), Senior Vice President of Analog and Design, efabless Corporation.
+## Acknowledgements 
 
 
+I would like to sincerely thank Kunal Ghosh Sir, Anagha Ma'am, and the entire VSDIAT team for providing an outstanding learning experience in the Digital VLSI SoC Design course. Their structured content, practical labs, and clarity in explanations made even complex concepts easier to grasp.
+
+My gratitude also extends to the IIITB team and Madhav Sir for conducting insightful Level 2 sessions that helped bridge theoretical understanding with hands-on application.
+
+Special thanks to Sudarshan Sir, whose consistent mentorship, support, and encouragement played a vital role throughout the course. His dedication and guidance helped me stay motivated and confident while tackling industry-level tools and workflows.
+
+Lastly, I would like to appreciate all the peers and contributors from the VSD community who shared resources and discussions that enriched this journey. This experience has been a key milestone in my VLSI learning path
+
+## Bibliography
+VSDIAT Platform (VLSI System Design – Industry-Academia Training)
+
+Course Lectures and Labs by Kunal Ghosh and Anagha Joshi
+
+Digital VLSI SoC Design course materials
+
+OpenLANE Documentation: https://github.com/The-OpenROAD-Project/OpenLane
+
+SkyWater 130nm PDK: https://github.com/google/skywater-pdk
+
+GitHub Repositories by fellow learners and instructors (used for reference)
+
+***
+---
 
 
+>### Prepared and documented by *Prajwal M Sondakar*   
+>#### Course: Digital VLSI SoC Design Course, VSDIAT – July 2025 Batch
 
+***
+---
